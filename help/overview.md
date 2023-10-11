@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: Headless CMS, adaptive forms, Headless UI, Headful ful CMS, voice assistants, alexa, chatbots, WhatsApp architecture
 hide: false
 exl-id: 3b5b955b-d59c-43d9-9cc4-3244a08f80dc
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: a88f2dab6fda61b674300e1d6a6c4f495ba85c97
 workflow-type: tm+mt
-source-wordcount: '400'
+source-wordcount: '353'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,9 @@ Alla avancerade utvecklare som är bekanta med moderna JavaScript-ramverk kan an
 
 Du behöver ingen tidigare kunskap om Adobe Experience Manager för att utveckla formulär som kan anpassas efter Headless.
 
-## Hur går jag med i det tidiga adopterprogrammet? {#how-to-join-early-adopter-forms}
+<!-- 
+## How to join the early adopter program? {#how-to-join-early-adopter-forms}
 
-Tjänsten är tillgänglig för AEM Forms as a Cloud Service och AEM 6.5.16.0 Forms eller senare On-Premise-kunder samt företagskunder med Adobe-Managed Service. Skicka e-post till [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) från ditt officiella e-post-ID till att gå med i det tidiga adopterprogrammet.
+The service is available for AEM Forms as a Cloud Service and AEM 6.5.16.0 Forms or later On-Premise term customers and Adobe-Managed Service enterprise customers. Send an email to [headlessadaptiveforms@adobe.com](mailto:headlessadaptiveforms@adobe.com) from your official email ID to join the early adopter program. 
+
+-->
