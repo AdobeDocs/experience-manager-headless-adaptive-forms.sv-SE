@@ -4,12 +4,10 @@ seo-title: Build Engaging Forms Using Core Components and Headless
 description: Bygg engagerande Forms med kärnkomponenter och headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
-hide: true
-hidefromtoc: true
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 2332af82ea221086c3b014989651e34726040ba2
+source-git-commit: 428416d61f236396449d26df208bf284a1ad162f
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2452'
 ht-degree: 0%
 
 ---
@@ -36,7 +34,7 @@ Så här använder du händerna på labbet:
 
 * Installera [senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare kan du läsa [Installerar Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare, se [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare, se [Så här installerar du Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
 * [Aktivera adaptiva Forms Core-komponenter](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) för AEM Forms as a Cloud Service miljö.
 
@@ -60,10 +58,11 @@ I den här lektionen lär du dig att bekanta dig med AEM Forms as a Cloud Servic
    [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
 
 1. Logga in i Cloud Servicens redigeringsmiljö.
+   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
 1. Navigera till användargränssnittet i AEM Forms genom att klicka **Forms > Forms &amp; Documents**.
 
-   ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
+
 
    ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
 
@@ -218,11 +217,18 @@ Konfigurera lokal databas för temat:
 
 1. Ange följande värden för variablerna i .env-filen och spara filen:
 
-   * **AEM_URL**: Ange molntjänstens publiceringsmiljö. Till exempel, `https://publish-p105303-e986623.adobeaemcloud.com/`
+   * **AEM_URL**: Ange molntjänstens publiceringsmiljö. Exempel: `https://publish-p105303-e986623.adobeaemcloud.com/`
 
    * **AEM_ADAPTIVE_FORM**: Ange formulärets sökväg. Om formulärsökvägen till exempel är `/content/forms/af/registration`, skulle värdet för den här variabeln vara `registration`.
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
+
+1. Skapa en lokal användare i AEM.
+
+   >[!NOTE]
+   > Så här skapar du en lokal användare:
+   > Gå till `AEM Home` > `Tools` > `Security` > `Users`
+   > Se till att användaren är medlem i gruppen för användare av formulär.
 
 
 1. Kör följande kommando i kommandotolken:
@@ -246,7 +252,10 @@ Konfigurera lokal databas för temat:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   När ovanstående kommando har körts väntar du på `webpack compiled` meddelande. Formuläret visas på en webbläsarflik.
+   När ovanstående kommando har körts väntar du på `webpack compiled` och du omdirigeras till en AEM inloggningssida.
+
+1. Klicka **Logga in lokalt (endast administrationsuppgifter)** på AEM inloggningssida.
+1. Ange inloggningsuppgifterna för den skapade lokala användaren och formuläret visas på en webbläsarflik.
 
    >[!NOTE]
    >
@@ -332,9 +341,9 @@ Så här återger du formuläret som finns i molntjänstens publiceringsmiljö:
 
 1. Ange följande värden för variablerna i .env-filen. Spara filen när du har uppdaterat variablerna.
 
-   * **AEM_URL**: Ange URL:en för molntjänstens publiceringsmiljö. Till exempel, `https://publish-p105303-e986623.adobeaemcloud.com`
+   * **AEM_URL**: Ange URL:en för molntjänstens publiceringsmiljö. Exempel: `https://publish-p105303-e986623.adobeaemcloud.com`
 
-   * **AEM_FORM_PATH**: Ange sökvägen till det anpassade formulär som skapades i föregående lektion. Till exempel, `/content/forms/af/registration/`
+   * **AEM_FORM_PATH**: Ange sökvägen till det anpassade formulär som skapades i föregående lektion. Exempel: `/content/forms/af/registration/`
 
      ![](/help/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
