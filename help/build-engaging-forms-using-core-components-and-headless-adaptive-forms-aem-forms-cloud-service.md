@@ -5,7 +5,7 @@ description: Bygg engagerande Forms med kärnkomponenter och headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: 428416d61f236396449d26df208bf284a1ad162f
+source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 0%
@@ -84,9 +84,9 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
 1. Skapa en slutpunkt för överföring av formuläret:
 
    1. Öppna <https://requestbin.com/> på en ny flik i webbläsaren.
+   1. Klicka **Skapa en offentlig behållare** och kopiera slutpunkts-URL:en.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. Klicka **Skapa en offentlig behållare** och kopiera slutpunkts-URL:en.
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
 1. Skapa ett anpassat formulär med hjälp av guidegränssnittet:
@@ -103,8 +103,7 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
    1. Klicka på **Stil** och väljer **wknd-tema** tema enligt nedan:
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Klicka på **Inlämning** och väljer **Skicka till REST-slutpunkt** och ange det publika facket i
-      **URL för begäran om POST** enligt nedan:
+   1. Klicka på **Inlämning** och väljer **Skicka till REST-slutpunkt** och ange det publika facket i **URL för begäran om POST** enligt nedan:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Klicka **Skapa**. Ange ett namn och en rubrik för formuläret. Till exempel: **registrering**. Klicka **Skapa**.
@@ -115,10 +114,6 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
    1. Dra och släpp komponenter från komponentwebbläsaren för att skapa ett formulär som liknar följande:
 
       ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
-
-
-
-
 
 1. Lägg till valideringar i formuläret:
 
@@ -241,7 +236,7 @@ Konfigurera lokal databas för temat:
 
    >[!NOTE]
    >
-   > * Om du får ett meddelande där du ombeds att uppdatera npm via `npm notice Run npm nstall -g npm@9.6.0`ignorera meddelandet.
+   > * Om du får ett meddelande där du ombeds att uppdatera npm via `npm notice Run npm nstall -g npm@9.6.0` ignorera meddelandet.
    > * Kör inte andra npm-kommandon om inte annat anges i arbetsboken.
 
 1. Kör nu följande kommando för att förhandsgranska formuläret.
