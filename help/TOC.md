@@ -5,17 +5,18 @@ user-guide-description: Dokumentation för Adobe Experience Manager Headless ada
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: b1e62aa73d5f442c8d025202f3bad31c0f82a113
+source-git-commit: 6fbc8605163c5f5415cadf5c19c96e1f68a23841
 workflow-type: tm+mt
-source-wordcount: '137'
-ht-degree: 4%
+source-wordcount: '138'
+ht-degree: 0%
 
 ---
 
 
 # Adobe Experience Manager Headless adaptive forms {#using}
 
-+ [Översikt](overview.md)
++ [Ökning](overview.md)
++ [Översikt Testning](overview-testing.md)
 + [Arkitektur](architecture.md)
 + Snabbinställningar {#quick-setup}
    + [Aktivera Headless Adaptive Forms på AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
@@ -30,7 +31,7 @@ ht-degree: 4%
    + [Skapa ett Headless-formulär med Adaptive Forms editor](create-a-headless-adaptive-form.md)
 + Referens för utvecklare {#developer-reference}
    + [Headless adaptive forms APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-+ [Vanliga frågor](faq.md)
++ [Frågor och svar](faq.md)
 + [Felsökning](troubleshooting.md)
 + [Microsoft Visual Studio Code-tillägg för Headless adaptive forms](visual-studio-code-extension-for-headless-adaptive-forms.md)
 
