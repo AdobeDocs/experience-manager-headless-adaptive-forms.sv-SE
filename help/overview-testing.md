@@ -10,9 +10,9 @@ keywords: Headless CMS, adaptive forms, Headless UI, Headful ful CMS, voice assi
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 7516095c2074b0b3b5300d75dc9624beb7ffb3f6
+source-git-commit: 1f70e2bb0e5f12e8ee5d948ef1d3cd2935f2274f
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -32,16 +32,9 @@ Headless adaptive forms help you:
 
 Dessutom kan du utveckla egna komponenter för att återge ett formulär med valfritt gränssnittsramverk och programmeringsspråk. Du kan också använda React-komponenter som finns färdiga för att återge en Headless-anpassningsbar form.
 
-## Viktiga funktioner
-
-<div>
-
-<iframe src="https://new.express.adobe.com/published/urn:aaid:sc:AP:8043685e-6c54-471a-a2ee-b8fcd357668f?promoid=Y69SGM5H&mv=other" style="width:100%; height:100vh; border:none;"></iframe>
-
-</div>
-
-
 <!-- 
+
+## Key Features
 
 <table style="width:100%;">
   <tr>
@@ -127,39 +120,39 @@ Dessutom kan du utveckla egna komponenter för att återge ett formulär med val
   </tr>
 </table>
 
--->
+
 
 
 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; margin: 20px;">
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Ikon 1" style="width: 50px; height: 50px;">
-        <h2 style="margin-top: 10px;">Rubrik 1</h2>
-        <p>Beskrivning 1</p>
+        <img src="/help/assets/01-overview-responsive-forms.jpeg" alt="Icon 1" style="width: 50px; height: 50px;">
+        <h2 style="margin-top: 10px;">Heading 1</h2>
+        <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Ikon 2" style="width: 50px; height: 50px;">
-        <h2 style="margin-top: 10px;">Rubrik 2</h2>
-        <p>Beskrivning 2</p>
+        <img src="/help/assets/02-overview-backend-systems.jpeg" alt="Icon 2" style="width: 50px; height: 50px;">
+        <h2 style="margin-top: 10px;">Heading 2</h2>
+        <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Ikon 3" style="width: 50px; height: 50px;">
-        <h2 style="margin-top: 10px;">Rubrik 3</h2>
-        <p>Beskrivning 3</p>
+        <img src="/help/assets/03-overview-save-and-resume.jpeg" alt="Icon 3" style="width: 50px; height: 50px;">
+        <h2 style="margin-top: 10px;">Heading 3</h2>
+        <p>Description 3</p>
     </div>
         <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/04-overview-search.jpeg" alt="Ikon 1" style="width: 50px; height: 50px;">
-        <h2 style="margin-top: 10px;">Rubrik 1</h2>
-        <p>Beskrivning 1</p>
+        <img src="/help/assets/04-overview-search.jpeg" alt="Icon 1" style="width: 50px; height: 50px;">
+        <h2 style="margin-top: 10px;">Heading 1</h2>
+        <p>Description 1</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/05-overview-analytics.jpeg" alt="Ikon 2" style="width: 50px; height: 50px;">
-        <h2 style="margin-top: 10px;">Rubrik 2</h2>
-        <p>Beskrivning 2</p>
+        <img src="/help/assets/05-overview-analytics.jpeg" alt="Icon 2" style="width: 50px; height: 50px;">
+        <h2 style="margin-top: 10px;">Heading 2</h2>
+        <p>Description 2</p>
     </div>
     <div style="width: 30%; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-sizing: border-box;">
-        <img src="/help/assets/06-overview-business-process.jpeg" alt="Ikon 3" style="width: 50px; height: 50px;">
-        <h2 style="margin-top: 10px;">Rubrik 3</h2>
-        <p>Beskrivning 3</p>
+        <img src="/help/assets/06-overview-business-process.jpeg" alt="Icon 3" style="width: 50px; height: 50px;">
+        <h2 style="margin-top: 10px;">Heading 3</h2>
+        <p>Description 3</p>
     </div>
     <!-- Add more cards as needed -->
 </div>
@@ -186,7 +179,7 @@ Dessutom kan du utveckla egna komponenter för att återge ett formulär med val
     <!-- Add more cards as needed -->
 </div>
 
-
+—>
 
 ## Vem kan använda Headless-anpassade formulär? {#who-can-use-headless-adaptive-forms}
 
