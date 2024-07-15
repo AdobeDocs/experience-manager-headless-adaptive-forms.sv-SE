@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Generera ett postdokument för ett anpassat formulär utan rubrik {#generate-a-document-of-record-for-a-headless-adaptive-form}
 
-<span class="preview"> Det här är en **PÅGÅENDE ARBETE** artikel.</span>
+<span class="preview"> Det här är en **PÅGÅENDE ARBETE**-artikel.</span>

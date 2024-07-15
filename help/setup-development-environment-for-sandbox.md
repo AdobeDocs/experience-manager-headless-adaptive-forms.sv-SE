@@ -5,31 +5,31 @@ hide: true
 exl-id: befac9ad-d2c4-4705-96fc-f0ea0ef823b8
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
 
 # Konfigurera utvecklingsmiljö för Headless adaptive forms på Cloud Service
 
-<span class="preview"> Det här är en **PÅGÅENDE ARBETE** artikel.</span>
+<span class="preview"> Det här är en **PÅGÅENDE ARBETE**-artikel.</span>
 
 
 Är du redo att skapa och testa Headless-anpassade formulär på Cloud Servicen? Aktivera Forms för er Cloud Service och komma igång.
 
 ## Innan du börjar
 
-* Installera [Senaste versionen av Git](https://git-scm.com/downloads) på din lokala dator. Om du inte har använt Git tidigare kan du läsa [Installerar Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Du använder Git-databasen för att skicka formulären och den anpassade koden som utvecklats i den lokala utvecklingsmiljön till Cloud Servicens utvecklingsmiljö.
+* Installera [den senaste versionen av Git](https://git-scm.com/downloads) på den lokala datorn. Om du inte har använt Git tidigare läser du [Installera Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). Du använder Git-databasen för att skicka formulären och den anpassade koden som utvecklats i den lokala utvecklingsmiljön till Cloud Servicens utvecklingsmiljö.
 
-* Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/) på din lokala dator. Om du inte har använt Node.js tidigare, se [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/) på den lokala datorn. Om du inte har använt Node.js tidigare läser du [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* Skapa ett AEM as a Cloud Service program: Följ steg 1-7 i [skapa program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program) artikel för att skapa ett program för din organisation.
+* Skapa ett AEM as a Cloud Service-program: Följ steg 1-7 i artikeln [Skapa program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program) för att skapa ett program för din organisation.
 
-* Aktivera [Förhandslanseringskanal för Cloud Servicen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?cloud-environments).
+* Aktivera [betaversionskanalen för Cloud Servicen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?cloud-environments).
 
 ## Konfigurera arbetsflöde
 
-Aktivera Headless-anpassade formulär på din Forms as a Cloud Service sandlåda `Forms - Digital enrolment` för ditt AEM Cloud Service-program, skapa ett Archetype 37-projekt eller senare baserat på din dator och skicka det vidare till din as a Cloud Service Forms-miljö. Hela processen är:
+Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud Service-program om du vill aktivera Headless-anpassade formulär på din Forms as a Cloud Service Sandbox, skapa ett Archetype 37-projekt eller ett senare baserat projekt på din lokala dator och skicka det till din Forms as a Cloud Service miljö. Hela processen är:
 
 ![Arbetsflöde för att konfigurera utvecklingsmiljö för en Forms as a Cloud Service Sandbox](assets/FORMS-HLAF-SANDBOX-PRODUCTION-ENR.png)
 
@@ -38,44 +38,44 @@ Aktivera Headless-anpassade formulär på din Forms as a Cloud Service sandlåda
 <table style="table-layout:auto">
 <tr>
   <td>
-  1. Logga in på <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a>  och väljer <b> Experience Manager </b> alternativ.
+  1. Logga in på <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> och välj alternativet <b> Experience Manager </b> .
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/cloud-manager-experience-manager.png">
+      <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
   </td>
 </tr>
 <tr>
   <td>
-  2. För <b> Cloud Manager </b> alternativ, klicka <b> Starta. </b> En lista över program för din organisation visas.
+  2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/cloud-manager-experience-manager-launch.png">
+      <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
   </td>
 </tr>
 <tr>
   <td>
-    3. För ditt program trycker du på ...-ikonen och väljer <b> Redigera program </b> alternativ. En dialogruta visas. 
+    3. För ditt program trycker du på ...-ikonen och väljer alternativet <b> Redigera program </b> . En dialogruta visas. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/edit-program.png">
+      <img alt="AEM as a Cloud Service" src="assets/edit-program.png">
     </a>
     <br>
   </td>
 </tr>
 <tr>
   <td>
-    4. I dialogrutan Redigera program går du till <b> Fliken Lösningar och tillägg </b>väljer du <b> Forms - digital registrering </b> och tryck <b> uppdatera </b>. 
+    4. Gå till fliken <b> Lösningar och tillägg </b> i dialogrutan Redigera program, välj alternativet <b> Forms - digital registrering </b> och tryck sedan på <b> update </b> . 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/program-solution-addons.png">
+      <img alt="AEM as a Cloud Service" src="assets/program-solution-addons.png">
     </a>
     <br>
   </td>
@@ -84,7 +84,7 @@ Aktivera Headless-anpassade formulär på din Forms as a Cloud Service sandlåda
 
 ### 2. Klona Git-databasen för ditt program till din lokala dator
 
-Alla AEM as a Cloud Service program har en Git-databas. Med den kan du överföra anpassad kod och resurser från den lokala datorn till din Cloud Service. Under installationen använder vi Git-databasen för att ta med kod, mallar och annan information för Headless-formulär från din lokala Cloud Service. Klona Cloud Servicens Git-databas på den lokala datorn är det första steget mot att överföra anpassad kod och innehåll från den lokala datorn till Cloud Servicen.
+Alla AEM as a Cloud Service-program har en Git-databas. Med den kan du överföra anpassad kod och resurser från den lokala datorn till din Cloud Service. Under installationen använder vi Git-databasen för att ta med kod, mallar och annan information för Headless-formulär från din lokala Cloud Service. Klona Cloud Servicens Git-databas på den lokala datorn är det första steget mot att överföra anpassad kod och innehåll från den lokala datorn till Cloud Servicen.
 
 >[!INFO]
 >
@@ -96,21 +96,21 @@ Så här klonar du databasen:
 <table style="table-layout:fixed">
 <tr>
   <td>
-  1. Tryck på <b> Få åtkomst till svarsinformation. </b> En dialogruta med databasinformation visas 
+  1. Tryck på <b> för att få åtkomst till informationen om svar i programmets pipeline. </b> En dialogruta med databasinformation visas 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/git-repo.png">
+      <img alt="AEM as a Cloud Service" src="assets/git-repo.png">
     </a>
     <br>
   </td>
 </tr>
 <tr>
   <td>
-  2. Tryck <b> Generera lösenord </b> och kopiera <b> Databas-URL. </b> 
+  2. Tryck på <b> Generera lösenord </b> och kopiera <b> databas-URL:en. </b> 
   </td>
   <td>
-      <img alt="AEM as a Cloud Service program" src="assets/repository-info.png">
+      <img alt="AEM as a Cloud Service" src="assets/repository-info.png">
     <br>
   </td>
 </tr>
@@ -122,10 +122,10 @@ Så här klonar du databasen:
     Till exempel: </br> 
     <code> git clone https://git.cloudmanager.adobe.com/stage-aemformsdev/khushwantsingh-p45413-uk89613/ </code>
 
-</br> När du blir tillfrågad kan du <b> Användarnamn</b> och <b>Lösenord</b> från <b>Databasinformation</b> skärm.
+</br> Hämta <b> användarnamn </b> och <b>lösenord</b> från skärmen <b>Databasinformation</b> när du tillfrågas.
 </td>
   <td>
-     <img alt="AEM as a Cloud Service program" src="assets/clone-success.png">
+     <img alt="AEM as a Cloud Service" src="assets/clone-success.png">
   </td>
 </tr>
 </table>
@@ -133,8 +133,9 @@ Så här klonar du databasen:
 
 ### 3. Skapa ett AEM Archetype-baserat projekt
 
-Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt baserat på bästa praxis för att komma igång med Headless-anpassade formulär. Den innehåller även basfunktioner för Headless-anpassade formulär för Forms as a Cloud Service. Det är obligatoriskt att skapa och distribuera det arkitekturbaserade projektet 37 eller senare.
-®® Beroende på vilket operativsystem du har kan du köra kommandot maven för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Se [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) för att hitta den senaste versionen av Archetype.
+Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt baserat på bästa praxis för att komma igång med Headless-anpassade formulär. Det innehåller även basfunktioner för Headless-anpassade formulär för Forms as a Cloud Service. Det är obligatoriskt att skapa och distribuera det arkitekturbaserade projektet 37 eller senare.
+®®
+Beroende på vilket operativsystem du använder kör du kommandot maven för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Se [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) för att hitta den senaste versionen av Archetype.
 
 +++ Microsoft® Windows
 
@@ -153,20 +154,21 @@ Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt ba
      -D includeFormsheadless="y" 
    ```
 
-™™ * Ställ in `appTitle` för att definiera titel- och komponentgrupper.
-* Uppsättning `appId` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
-* Uppsättning `groupId` för att definiera Maven groupId och Java™ Source Package.
-* Använd `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
-* Använd `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera funktionen för Headless-anpassade formulär. När du aktiverar det här alternativet ingår följande:\
-* **Tom med kärnkomponenter** mall med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
-* En modul för frontinslag, `ui.frontend.react.forms.af`. Det hjälper dig att återge Headless-formulär i en responsapp.
+™™
+* Ange `appTitle` för att definiera titel- och komponentgrupperna.
+* Ange `appId` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
+* Ange `groupId` för att definiera Maven groupId och Java™ Source Package.
+* Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
+* Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera funktionen för Headless-anpassade formulär. När du aktiverar det här alternativet ingår följande:\
+* Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+* En modul för frontindrag, `ui.frontend.react.forms.af`. Det hjälper dig att återge Headless-formulär i en responsapp.
 
 +++®®
 
 
 +++ Apple macOS eller Linux®
 
-1. Öppna terminalen som rotanvändare. Det gör att du kan köra kommandon med administratörsbehörighet. Du kan också använda `sudo root` när du har öppnat terminalfönstret för att köra kommandon med administratörsbehörighet.
+1. Öppna terminalen som rotanvändare. Det gör att du kan köra kommandon med administratörsbehörighet. Du kan också använda kommandot `sudo root` när du har öppnat terminalfönstret för att köra kommandon med administratörsbehörighet.
 1. Kör kommandot nedan:
 
    ```shell
@@ -181,17 +183,18 @@ Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt ba
      -D includeFormsheadless="y"  
    ```
 
-™™ * Ställ in `appTitle` för att definiera titel- och komponentgrupper.
-* Uppsättning `appId` för att definiera Maven artifactId, komponenten, config, innehållsmappnamn och klientbiblioteksnamn.
-* Uppsättning `groupId` för att definiera Maven groupId och Java™ Source Package.
-* Använd `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
-* Använd `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera funktionen för Headless-anpassade formulär. När du aktiverar det här alternativet ingår följande:\
-* **Tom med kärnkomponenter** mall med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
-* En modul för frontinslag, `ui.frontend.react.forms.af`. Det hjälper dig att återge Headless-formulär i en responsapp.
+™™
+* Ange `appTitle` för att definiera titel- och komponentgrupperna.
+* Ange `appId` för att definiera Maven artifactId, komponenten, config, innehållsmappnamn och klientbiblioteksnamn.
+* Ange `groupId` för att definiera Maven groupId och Java™ Source Package.
+* Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
+* Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera funktionen för Headless-anpassade formulär. När du aktiverar det här alternativet ingår följande:\
+* Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+* Modulen `ui.frontend.react.forms.af` för att reagera framåt. Det hjälper dig att återge Headless-formulär i en responsapp.
 
 +++
 
-När kommandot är klart skapas en projektmapp med namnet som anges i `appID` skapas. Om du till exempel använder `appID` med värde `myheadlessform`, en mapp med namnet `myheadlessform` skapas. Det innehåller det Arketype-baserade projektet.
+När kommandot har slutförts skapas en projektmapp med det namn som har angetts i `appID`. Om du till exempel använder `appID` med värdet `myheadlessform` skapas en mapp med namnet `myheadlessform`. Det innehåller det Arketype-baserade projektet.
 
 ### 4. Skicka det AEM Arketype-baserade projektet till Cloud Servicen
 
@@ -214,37 +217,37 @@ När kommandot är klart skapas en projektmapp med namnet som anges i `appID` sk
 <table style="table-layout:auto">
 <tr>
   <td>
-  1. Logga in på <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a>  och väljer <b> Experience Manager </b> alternativ.
+  1. Logga in på <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> och välj alternativet <b> Experience Manager </b> .
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/cloud-manager-experience-manager.png">
+      <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
   </td>
 </tr>
 <tr>
   <td>
-  2. För <b> Cloud Manager </b> alternativ, klicka <b> Starta. </b> En lista över program för din organisation visas. Öppna programmet. 
+  2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas. Öppna programmet. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/cloud-manager-experience-manager-launch.png">
+      <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
   </td>
 </tr>
 <tr>
   <td>
-    3. För din pipeline trycker du på ...-ikonen och väljer <b> Kör </b> alternativ. Tryck på om du uppmanas att köra pipeline <b> Kör </b> och vänta på pipeline <b> Status </b>  att ändra till <b> Slutförd </b>.  
+    3. Tryck på ikonen ... för din pipeline och välj alternativet <b> Kör </b> . Om du uppmanas att köra pipelinen trycker du på <b> Kör </b> och väntar på pipelinans <b> status </b> för att ändra till <b> Slutförd </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
-      <img alt="AEM as a Cloud Service program" src="assets/run-build-pipeline.png">
+      <img alt="AEM as a Cloud Service" src="assets/run-build-pipeline.png">
     </a>
     <br>
   </td>
 </tr>
 </table>
 
-Nu kan du börja använda Headless-formulär. Du kan nu överföra JSON-definitionen för ett formulär till din Cloud Service-miljö, skapa ett Headless-anpassat formulär baserat på den och använda [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition/operation/getForm) och andra övriga API:er för att använda det Headless-anpassade formuläret i programmet eller tjänsten.
+Nu kan du börja använda Headless-formulär. Du kan nu överföra JSON-definitionen för ett formulär till din formulärmiljö, skapa ett Headless-anpassat formulär baserat på det och använda [getForm](https://opensource.adobe.com/aem-forms-af-runtime/api/#tag/Get-Form-Definition/operation/getForm) och andra rest-API:er för att använda det Headless-anpassade formuläret i ditt program eller din Cloud Service.

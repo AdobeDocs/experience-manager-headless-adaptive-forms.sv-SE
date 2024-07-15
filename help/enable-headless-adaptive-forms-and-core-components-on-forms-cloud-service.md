@@ -1,5 +1,5 @@
 ---
-title: Aktivera Headless Adaptive Forms på AEM Forms as a Cloud Service
+title: Aktivera Headless Adaptive Forms i AEM Forms as a Cloud Service
 seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM Forms as a Cloud Service
 description: Lär dig hur du aktiverar headless adaptive forms på AEM Forms as a Cloud Service med vår steg-för-steg-guide. I vår självstudiekurs får du hjälp med processen så att du enkelt kan aktivera den här kraftfulla funktionen i din AEM Forms-miljö.
 seo-description: Learn how to enable headless adaptive forms on AEM Forms as a Cloud Service with our step-by-step guide. Our tutorial walks you through the process, making it easy to enable this powerful feature for your AEM Forms environment.
@@ -12,31 +12,31 @@ contentOwner: Khushwant Singh
 docset: CloudService
 hide: true
 hidefromtoc: true
-exl-id: 7c545ca6-cb2d-4d28-b9e8-b6efe3faee00
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+exl-id: 7afff771-1296-4162-84c5-c8266b94af2f
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
 
-# Aktivera Headless Adaptive Forms på AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+# Aktivera Headless Adaptive Forms i AEM Forms as a Cloud Service {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
 Om du aktiverar Headless Adaptive Forms på AEM Forms as a Cloud Service kan du börja skapa, publicera och leverera Headless Forms med AEM Forms Cloud Service-instanserna i flera kanaler. Du behöver en adaptiv Forms Core Components-aktiverad miljö för att kunna använda Headless Adaptive Forms.
 
 ## Överväganden
 
-* När du skapar ett nytt as a Cloud Service AEM Forms-program [Headless Adaptive Forms har redan aktiverats för dina miljöer](#are-adaptive-forms-core-components-enabled-for-my-environment).
+* När du skapar ett nytt as a Cloud Service AEM Forms-program är [Headless Adaptive Forms redan aktiverat för dina miljöer](#are-adaptive-forms-core-components-enabled-for-my-environment).
 
-* Om du har ett äldre as a Cloud Service Forms-program där Core Components är [inte aktiverad](#enable-components)kan du [lägg till adaptiva Forms Core-komponentberoenden](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) till din AEM as a Cloud Service lagringsplats och distribuera databasen till dina Cloud Service för att möjliggöra Headless Adaptive Forms.
+* Om du har ett äldre as a Cloud Service Forms-program där Core Components [inte är aktiverade](#enable-components) kan du [lägga till adaptiva Forms Core Components-beroenden](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) i din AEM as a Cloud Service-databas och distribuera databasen till dina Cloud Service för att aktivera Headless Adaptive Forms.
 
-* Om din befintliga Cloud Service-miljö innehåller alternativ för att [skapa grundläggande komponentbaserade adaptiva Forms](create-a-headless-adaptive-form.md), Headless Adaptive Forms är redan aktiverat för din miljö och du kan använda Core Component-baserad Adaptive Forms som headless-formulär för kanaler som mobil, webb, inbyggda appar och tjänster som kräver en headlessrepresentation av Adaptive Forms.
+* Om din befintliga Cloud Service-miljö innehåller alternativ för att [skapa Core Components-baserade Adaptive Forms](create-a-headless-adaptive-form.md) är Headless Adaptive Forms redan aktiverat för din miljö och du kan använda Core Component-baserad Adaptive Forms som headless-formulär för kanaler som mobil, webb, inbyggda appar och tjänster som kräver en huvudlös representation av Adaptive Forms.
 
 
 >[!NOTE]
 >
 >
-> Adobe tillhandahåller Adaptiv Forms [starter kit (React App)](create-and-publish-a-headless-form.md) för att hjälpa utvecklare att komma igång snabbt med Headless Adaptive Forms-utveckling utan att aktivera Headless Adaptive Forms i AEM Forms as a Cloud Service miljö. Du kan aktivera Headless Adaptive Forms i en as a Cloud Service Forms-miljö senare efter en [snabba händer med att utveckla headless-formulär](create-and-publish-a-headless-form.md).
+> Adobe tillhandahåller adaptiv Forms [starter kit (React App)](create-and-publish-a-headless-form.md) som hjälper utvecklare att snabbt komma igång med Headless Adaptive Forms-utveckling, utan att aktivera Headless Adaptive Forms i AEM Forms as a Cloud Service-miljö. Du kan aktivera den adaptiva Forms-miljön utan headless på en Forms as a Cloud Service-miljö senare efter en [snabbstart med utveckling av headless-formulär](create-and-publish-a-headless-form.md).
 
 ## Aktivera Headless Adaptive Forms för en as a Cloud Service AEM Forms-miljö
 
@@ -48,14 +48,14 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 
 ## 1. Klona din AEM Forms as a Cloud Service Git-databas {#clone-git-repository}
 
-1. Logga in på [Cloud Manager](https://my.cloudmanager.adobe.com/) och väljer organisation och program.
+1. Logga in på [Cloud Manager](https://my.cloudmanager.adobe.com/) och välj organisation och program.
 
-1. Navigera till **Pipelines** från **Programöversikt** klickar du på **Åtkomst till svarsinformation** för att komma åt och hantera din Git-databas. Sidan innehåller följande information:
+1. Gå till **pipelines**-kortet på sidan **Programöversikt** och klicka på knappen **Åtkomstrepoinformation** för att få tillgång till och hantera din Git-databas. Sidan innehåller följande information:
 
    * URL till Cloud Manager Git-databasen.
    * Autentiseringsuppgifter för Git-databasen (användarnamn och lösenord) Git-användarnamn.
 
-   Klicka **Generera lösenord** för att visa eller generera lösenordet.
+   Klicka på **Generera lösenord** för att visa eller generera lösenordet.
 
 1. Öppna terminalen eller kommandotolken på den lokala datorn och kör följande kommando:
 
@@ -69,8 +69,8 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 ## 2. Lägg till adaptiva Forms Core-komponentberoenden i Git-databasen {#add-adaptive-forms-core-components-dependencies}
 
 1. Öppna Git-databasmappen i en kodredigerare för oformaterad text. Exempel: VS-kod.
-1. Öppna `[AEM Repository Folder]\pom.xml` fil för redigering.
-1. Ersätt versioner av `core.forms.components.version`, `core.forms.components.af.version` och `core.wcm.components.version` komponenter med versioner angivna i [kärnkomponentdokumentation](https://github.com/adobe/aem-core-forms-components). Om komponenten inte finns lägger du till dessa komponenter.
+1. Öppna filen `[AEM Repository Folder]\pom.xml` för redigering.
+1. Ersätt versioner av komponenterna `core.forms.components.version`, `core.forms.components.af.version` och `core.wcm.components.version` med versioner som anges i [dokumentationen för kärnkomponenter](https://github.com/adobe/aem-core-forms-components). Om komponenten inte finns lägger du till dessa komponenter.
 
    ```XML
    <!-- Replace the version with the latest released version at https://github.com/adobe/aem-core-forms-components/tags -->
@@ -84,7 +84,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 
    ![Uppge den senaste versionen av Forms Core Components](/help/assets/latest-forms-component-version.png)
 
-1. I avsnittet Beroenden i `[AEM Repository Folder]\pom.xml` lägger du till följande beroenden och sparar filen.
+1. Lägg till följande beroenden i avsnittet Beroenden i filen `[AEM Repository Folder]\pom.xml` och spara filen.
 
    ```XML
        <!-- WCM Core Component Examples Dependencies -->
@@ -145,7 +145,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
    <!-- End of AEM Forms Core Component Dependencies -->
    ```
 
-1. Öppna `[AEM Repository Folder]/all/pom.xml` fil för redigering. Lägg till följande beroenden i `<embeddeds>` och spara filen.
+1. Öppna filen `[AEM Repository Folder]/all/pom.xml` för redigering. Lägg till följande beroenden i avsnittet `<embeddeds>` och spara filen.
 
    ```XML
    <!-- WCM Core Component Examples Dependencies -->
@@ -202,7 +202,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
    >
    >  Ersätt `${appId}` med ditt appId.
    >
-   >  Hitta `${appId}`, i `[AEM Repository Folder]/all/pom.xml` -fil, söka i `-packages/application/install` term. Texten före `-packages/application/install` termen `${appId}`. Följande kod, till exempel `myheadlessform` är `${appId}`.
+   >  Om du vill hitta din `${appId}` söker du efter termen `-packages/application/install` i filen `[AEM Repository Folder]/all/pom.xml`. Texten före termen `-packages/application/install` är din `${appId}`. Följande kod, `myheadlessform`, är till exempel `${appId}`.
    >
    >   ```
    >             <embedded>
@@ -213,7 +213,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
    >             </embedded>
    >   ```
 
-1. I `<dependencies>` i `[AEM Repository Folder]/all/pom.xml` lägger du till följande beroenden och sparar filen:
+1. Lägg till följande beroenden i `<dependencies>`-delen av filen `[AEM Repository Folder]/all/pom.xml` och spara filen:
 
    ```XML
            <!-- Other existing dependencies -->
@@ -251,7 +251,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
            </dependency>
    ```
 
-1. Öppna `[AEM Repository Folder]/ui.apps/pom.xml` för redigering. Lägg till `af-core bundle` beroende och spara filen.
+1. Öppna `[AEM Repository Folder]/ui.apps/pom.xml` för redigering. Lägg till `af-core bundle`-beroendet och spara filen.
 
    ```XML
        <dependency>
@@ -285,7 +285,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 
 ## 3. Uppdatera projektet så att det innehåller den senaste versionen av Forms Core Components:
 
-1. Öppna [AEM Archetype-projektmapp]/pom.xml för redigering.
+1. Öppna projektmappen [AEM Archetype]/pom.xml för redigering.
 
 
 1. Spara och stäng filen.
@@ -294,7 +294,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 
 1. Så här implementerar du kod i din Git-databas:
    1. Öppna terminalen eller kommandotolken.
-   1. Navigera till `[AEM Repository Folder]` och kör följande kommandon i den ordning de visas
+   1. Navigera till `[AEM Repository Folder]` och kör följande kommandon i den ordning som visas
 
       ```Shell
       git add pom.xml
@@ -304,7 +304,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
       git push origin
       ```
 
-1. När filerna har implementerats i Git-databasen, [Kör pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html).
+1. [Kör pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html) när filerna har implementerats i Git-databasen.
 
    När pipeline-körningen har slutförts aktiveras adaptiva Forms Core-komponenter för motsvarande miljö. Dessutom har en adaptiv Forms-mall (Core Components) och Canvas 3.0-temat lagts till i Forms as a Cloud Service miljö, med alternativ för att anpassa och skapa Core Components-baserade Adaptive Forms.
 
@@ -313,7 +313,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 
 ### Vad är kärnkomponenter? {#core-components}
 
-The [Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
+[Kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
 
 ### Vilka funktioner finns det för att aktivera kärnkomponenter? {#core-components-capabilities}
 
@@ -328,9 +328,9 @@ När de adaptiva Forms Core-komponenterna är aktiverade för din miljö läggs 
 
 Så här kontrollerar du att adaptiva Forms Core-komponenter är aktiverade för din miljö:
 
-1. [Klona din AEM Forms as a Cloud Service databas](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
+1. [Klona din AEM Forms as a Cloud Service-databas](#1-clone-your-aem-forms-as-a-cloud-service-git-repository).
 
-1. Öppna `[AEM Repository Folder]/all/pom.xml` -fil för din AEM Forms Cloud Service Git-databas.
+1. Öppna `[AEM Repository Folder]/all/pom.xml`-filen för din AEM Forms Cloud Service Git-databas.
 
 1. Sök efter följande beroenden:
 

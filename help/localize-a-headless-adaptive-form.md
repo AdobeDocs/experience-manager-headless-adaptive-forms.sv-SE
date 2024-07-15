@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Lokalisera ett Headless-formulär {#localize-a-headless-adaptive-form}
 
-<span class="preview"> Det här är en **PÅGÅENDE ARBETE** artikel.</span>
+<span class="preview"> Det här är en **PÅGÅENDE ARBETE**-artikel.</span>

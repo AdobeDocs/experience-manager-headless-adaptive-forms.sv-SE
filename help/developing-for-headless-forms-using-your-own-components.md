@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Utveckla för headless-formulär med egna komponenter {#developing-for-headless-forms-using-your-own-components}
 
-<span class="preview"> Det här är en **PÅGÅENDE ARBETE** artikel.</span>
+<span class="preview"> Det här är en **PÅGÅENDE ARBETE**-artikel.</span>

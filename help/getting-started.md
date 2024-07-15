@@ -31,4 +31,4 @@ För att förbättra effektiviteten och flexibiliteten i deras viseringsansökni
 
 Den vanligaste formen bland turister är&quot;Kontakta oss&quot;, som används för att ställa olika frågor och frågor. Den utländska avdelningen har därför valt att börja implementera den Headless adaptive forms-strategi med detta formulär. I den här självstudiekursen får du hjälp med att skapa formuläret Kontakta oss med den nya arkitekturen. Slutresultatet kommer att se ut så här:
 
-![Kontakta US Headless adaptive form](assets/contact-us-headless-adaptive-forms.png)
+![Kontakta USA Headless adaptive form](assets/contact-us-headless-adaptive-forms.png)

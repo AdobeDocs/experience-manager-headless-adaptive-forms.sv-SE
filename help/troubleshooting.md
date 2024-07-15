@@ -11,7 +11,7 @@ hide: false
 exl-id: bfb7e688-d2be-4aaa-ac9b-147cbd74b516
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '133'
 ht-degree: 0%
 
 ---
@@ -30,14 +30,14 @@ Det kan inträffa på grund av en version som inte stöds eller en skadad instal
 
 ### Lösning
 
-1. Helt [ta bort befintliga installationer av Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) i din miljö.
+1. [Ta bort befintliga installationer av Node.JS](https://khushwantsehgal.wordpress.com/2022/06/28/how-to-remove-node-js-completely-from-windows-10/) helt från din miljö.
 
 1. Installera Node.JS 16.13.0 eller senare med NPM.
 
 1. Starta om datorn.
 
 
-## The `mvn clean install` kommandot inte kan köras
+## Kommandot `mvn clean install` kan inte köras
 
 ### Problem
 
@@ -49,4 +49,4 @@ Det kan hända om Git inte är installerat.
 
 ### Lösning
 
-Hämta och installera [senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare kan du läsa [Installerar Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+Hämta och installera den [senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare läser du [Installera Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).

@@ -6,7 +6,7 @@ hide: true
 exl-id: 99985fed-4a34-47d6-bb6f-79f81e1cd71b
 source-git-commit: 41286ff4303e0f4d404deb113fd59d1499768da5
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ Adobe Experience Manager Headless adaptive forms ger sådana företag frihet att
 
 ## Innan du börjar
 
-* Konfigurera [utvecklingsmiljö](setup-development-environment.md) så att du kan skapa och testa ett Headless-anpassat formulär på din dator.
+* Konfigurera [utvecklingsmiljön](setup-development-environment.md) så att du kan skapa och testa ett Headless-anpassat formulär på den lokala datorn.
 * Följande programvara måste vara installerad på din lokala utvecklingsdator:
    * [Java Development Kit 11](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?1_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2FDc%3AsoftwareType&amp;1_group.propertyvalues.operation=equals&amp;1_group.propertyvalues.0_values=software-type%3Atooling&amp;fulltext=Oracle%7E+JDK%7E+11%7E&amp;orderby=%40jcr%3Acontent%2FDK jcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=14)
-   * [Senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare kan du läsa [Installerar Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-   * [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare, se [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
-   * [Maven 3.6 eller senare](https://maven.apache.org/download.cgi). Om du är ny i Maven, se [Installerar Apache Maven](https://maven.apache.org/install.html).
+   * [Senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare läser du [Installera Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+   * [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare läser du [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+   * [Maven 3.6 eller senare](https://maven.apache.org/download.cgi). Om du inte har använt Maven tidigare läser du [Installera Apache Maven](https://maven.apache.org/install.html).
 
 
 ## Använd arkivtypsprojektet för att skapa en Headless-blankett
 
-Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt baserat på bästa praxis för att komma igång med Headless-anpassade formulär. Den innehåller även Headless adaptive forms-funktioner för Forms as a Cloud Service och lokala utvecklingsmiljöer. Det är obligatoriskt att skapa och distribuera arkivtypen 37 eller senare under betafasen. Efter betaversionen krävs projektet bara för anpassningar.
+Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt baserat på bästa praxis för att komma igång med Headless-anpassade formulär. Den innehåller även Headless adaptive forms-funktioner för Forms as a Cloud Service och lokala utvecklingsmiljöer. Det är obligatoriskt att skapa och distribuera arkivtypen 37 eller senare under betafasen. Post-beta-projektet krävs endast för anpassningar.
 
 Så här skapar och återger du din första anpassade Headless-form:
 
@@ -47,7 +47,7 @@ Så här skapar och återger du din första anpassade Headless-form:
 
 ### 1. Skapa och driftsätt AEM Arketype-baserat projekt {#create-an-archetype-based-project}
 
-Beroende på vilket operativsystem du använder kör du kommandot nedan för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Se, [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) för att hitta den senaste versionen av Archetype.
+Beroende på vilket operativsystem du använder kör du kommandot nedan för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Mer information finns i [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) för att hitta den senaste versionen av Archetype.
 
 **Microsoft Windows**
 
@@ -66,18 +66,18 @@ Beroende på vilket operativsystem du använder kör du kommandot nedan för att
      -D includeFormsheadless="y" 
    ```
 
-   * Ange `appTitle` för att definiera titel- och komponentgrupper.
+   * Ange `appTitle` för att definiera titel- och komponentgrupperna.
    * Ange `appId` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
    * Ange `groupId` för att definiera Maven groupId och Java Source Package.
-   * Använd `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
-   * Använd `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera Headless Adaptive Forms-funktioner. När du aktiverar det här alternativet ingår följande:
-      * The **Tom med kärnkomponenter** mall med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
-      * En modul för frontinslag, `ui.frontend.react.forms.af`. Det hjälper dig att återge headless adaptive form i en responsapp.
+   * Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
+   * Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera Forms-funktionalitet utan Headless. När du aktiverar det här alternativet ingår följande:
+      * Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+      * En modul för frontindrag, `ui.frontend.react.forms.af`. Det hjälper dig att återge headless adaptive form i en responsapp.
 
 
 **Apple macOS eller Linux**:
 
-1. Öppna terminalen som rotanvändare. Det gör att du kan köra kommandon med administratörsbehörighet. Du kan också använda `sudo root` när du har öppnat terminalfönstret för att köra kommandon med administratörsbehörighet.
+1. Öppna terminalen som rotanvändare. Det gör att du kan köra kommandon med administratörsbehörighet. Du kan också använda kommandot `sudo root` när du har öppnat terminalfönstret för att köra kommandon med administratörsbehörighet.
 1. Kör kommandot nedan:
 
    ```shell
@@ -92,24 +92,24 @@ Beroende på vilket operativsystem du använder kör du kommandot nedan för att
      -D includeFormsheadless="y"  
    ```
 
-   * Ange `appTitle` för att definiera titel- och komponentgrupper.
+   * Ange `appTitle` för att definiera titel- och komponentgrupperna.
    * Ange `appId` för att definiera Maven artifactId, komponenten, config, innehållsmappnamn och klientbiblioteksnamn.
    * Ange `groupId` för att definiera Maven groupId och Java Source Package.
-   * Använd `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
-   * Använd `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera Headless Adaptive Forms-funktioner. När du aktiverar det här alternativet ingår följande:
-      * The **Tom med kärnkomponenter** mall med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
-      * En modul för frontinslag, `ui.frontend.react.forms.af`. Det hjälper dig att återge headless adaptive form i en responsapp.
+   * Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
+   * Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera Forms-funktionalitet utan Headless. När du aktiverar det här alternativet ingår följande:
+      * Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+      * Modulen `ui.frontend.react.forms.af` påverkas av en klientdel. Det hjälper dig att återge headless adaptive form i en responsapp.
 
-När kommandot är klart skapas en projektmapp med namnet som anges i `appID` skapas. Om du till exempel använder `appID` med värde `myheadlessform`, en mapp med namnet `myheadlessform` skapas. Det innehåller det Arketype-baserade projektet.
+När kommandot har slutförts skapas en projektmapp med det namn som har angetts i `appID`. Om du till exempel använder `appID` med värdet `myheadlessform` skapas en mapp med namnet `myheadlessform`. Det innehåller det Arketype-baserade projektet.
 
 
 ### 2. Distribuera projektet till AEM SDK {#deploy-the-project-to-a-local-development-environment}
 
-När du distribuerar projektet till din AEM SDK-instans läggs funktionen Headless Adaptive Forms till, **Tom med kärnkomponenter** mallar och andra resurser som ingår i projektet i din utvecklingsmiljö. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Så här distribuerar du till din AEM SDK-instans:
+När du distribuerar projektet till din AEM SDK-instans läggs funktionen Headless Adaptive Forms till, mallen **Blank with core components** och andra resurser som ingår i projektet till i din utvecklingsmiljö. <!-- Deploy the project to your local development environment to locally create Headless Adaptive Forms. or deploy directly to your Forms as a Cloud Service environment. !--> Så här distribuerar du till din AEM SDK-instans:
 
-1. Öppna kommandotolken. Om du använder Windows öppnar du kommandotolken med administratörsbehörighet (Kör kommandotolk eller [Git-basskal](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)  som administratör).
+1. Öppna kommandotolken. Om du är i Windows öppnar du kommandotolken med administratörsbehörighet (Kör kommandotolk eller [Git bash-skalet](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/) som administratör).
 
-1. Navigera till projektkatalogen som skapades i föregående steg. Till exempel, `/myheadlessform`
+1. Navigera till projektkatalogen som skapades i föregående steg. Exempel: `/myheadlessform`
 
    ![project-directory](assets/project-directory.png)
 
@@ -122,7 +122,7 @@ När du distribuerar projektet till din AEM SDK-instans läggs funktionen Headle
    Vänta på meddelandet &#39;BUILD SUCCESS&#39;.
    ![Projektet har distribuerats](assets/project-deployed-successfully.png)
 
-   Det kan ta lång tid att lösa beroendena och distribuera projektet. Om det inte går att distribuera projektet finns mer information i [felsökning](troubleshooting.md) artikel för vanliga problem och deras lösning.
+   Det kan ta lång tid att lösa beroendena och distribuera projektet. Om det inte går att distribuera projektet läser du [felsökning](troubleshooting.md) i artikeln om vanliga problem och deras lösning.
 
 
 <!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
@@ -130,12 +130,12 @@ När du distribuerar projektet till din AEM SDK-instans läggs funktionen Headle
 
 ### 3. Skapa ett JSON-schema med ett headless adaptivt format och överför det till din AEM SDK-instans {#create-add-json-representation-of-headless-adaptive-forms}
 
-En Headless Adaptive Forms representeras som en JSON-fil. Du kan hämta ett exempelformulär från [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) eller använd exempelformuläret som finns i Archetype Project på `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Det här dokumentet använder [introduktion](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) från Storybook. Det är ett enda fältformulär som hjälper dig att snabbt komma igång med Headless Adaptive Forms. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
+En Headless Adaptive Forms representeras som en JSON-fil. Du kan hämta ett exempelformulär från [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) eller använda exempelformuläret includes i Archetype Project på `[Archetype Project]\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\af_model_sample.json`. Det här dokumentet använder formuläret [introduction](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) från Storybook. Det är ett enda fältformulär som hjälper dig att snabbt komma igång med Headless Adaptive Forms. <!-- The [specifications](/help/assets/Headless-Adaptive-Form-Specification.pdf) document provides detailed information about various components, rules, and constraints for Headless Adaptive Forms -->
 
 Så här skapar och överför du schemat:
 
-1. Skapa en oformaterad textfil med filnamnstillägget `.json`. Till exempel, `myfirstform.json`. Du kan skapa filen var som helst i ditt filsystem eller i ditt AEM Archetype-baserade projekt på `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`
-1. Lägg till följande JSON-innehåll i `.json` och spara den:
+1. Skapa en oformaterad textfil med tillägget `.json`. Exempel: `myfirstform.json`. Du kan skapa filen var som helst i ditt filsystem eller i ditt AEM Archetype-baserade projekt på `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`
+1. Lägg till följande JSON-innehåll i din `.json`-fil och spara den:
 
    ```JSON
    {
@@ -160,11 +160,11 @@ Så här skapar och överför du schemat:
 
    ![Hello World](assets/introduction.png)
 
-1. Logga in på [lokal AEM SDK-instans](setup-development-environment.md#setup-author-instance)
+1. Logga in på din [lokala AEM SDK-instans](setup-development-environment.md#setup-author-instance)
 1. Navigera till Adobe Experience Manager > Forms > Forms och dokument. Tryck på Skapa > Filöverföring.
-1. Välj `.json` som har skapats i steg 2 och överförts. Du är redo att skapa den Headless Adaptive-formen. Om du sparar .json-filen i ditt AEM Archetype-baserade projekt på `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`. Du kan använda `mvn -PautoInstallPackage clean install` för att distribuera projektet till din AEM SDK och `<formname>.json` tillsammans med den.
+1. Markera `.json` som skapats i steg 2 och överför den. Du är redo att skapa den Headless Adaptive-formen. Om du sparar .json-filen i ditt AEM Archetype-baserade projekt på `\<project-name>\ui.content\src\main\content\jcr_root\content\dam\myheadlessform\<formname>.json`. Du kan använda `mvn -PautoInstallPackage clean install` för att distribuera projektet till AEM SDK och `<formname>.json` tillsammans med det.
 
-Om det inte går att överföra `.json`måste du se till att [AEM Archetype-projekt har distribuerats](#deploy-the-project-to-a-local-development-environment).
+Om det inte går att överföra `.json` kontrollerar du att [AEM Archetype-projektet har distribuerats ](#deploy-the-project-to-a-local-development-environment).
 
 <!-- 1. Open the [contact form](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--contact) and tap the [![Raw](assets/raw.png)](faq.md#storybook-example) icon on bottom-right side of the Storybook page to view the source code of the headless . 
 
@@ -186,11 +186,11 @@ If you are on Windows, run the above with Administrative privileges (Run command
 
 ### 4. Skapa ett adaptivt formulär baserat på mallen Tom med kärnkomponenter {#create-adaptive-form-with-blank-with-core-components-template}
 
-1. Logga in på [AEM SDK-instans](http://localhost:4502/).
+1. Logga in på din [AEM SDK-instans](http://localhost:4502/).
 
 1. Navigera till Adobe Experience Manager > Forms > Forms och dokument.
 
-1. Tryck på Skapa och välj Adaptivt formulär. Välj **Tom med kärnkomponenter** och tryck på Create.
+1. Tryck på Skapa och välj Adaptivt formulär. Välj mallen **Tom med kärnkomponenter** och tryck på Skapa.
 
    ![Mall](assets/template.png)
 
@@ -201,13 +201,13 @@ If you are on Windows, run the above with Administrative privileges (Run command
 
 1. Tryck på Skapa. Ett anpassat formulär skapas.
 
-Om du inte ser **Tom med kärnkomponenter** ska du se till att [AEM Archetype-projekt har distribuerats](#deploy-the-project-to-a-local-development-environment).
+Om du inte ser mallen **Tom med kärnkomponenter** kontrollerar du att projektet [AEM Archetype har distribuerats](#deploy-the-project-to-a-local-development-environment).
 
 ### 5. Konfigurera det adaptiva formuläret så att det använder JSON-schemat {#configure-adaptive-form-to-use-the-JSON-representation}
 
 Det adaptiva formulär som skapades i föregående steg är tomt. Konfigurera det adaptiva formuläret så att det använder JSON-schemat:
 
-1. Logga in på [AEM SDK-instans](http://localhost:4502/).
+1. Logga in på din [AEM SDK-instans](http://localhost:4502/).
 
 1. Navigera till Adobe Experience Manager > Forms > Forms och dokument. Markera det adaptiva formulär som skapades i föregående steg och tryck på Redigera. Det adaptiva formuläret öppnas i redigeraren.
 
@@ -219,13 +219,13 @@ Det adaptiva formulär som skapades i föregående steg är tomt. Konfigurera de
 
 1. Så här återger du formuläret på din lokala utvecklingsdator:
 
-   1. Öppna `[Archetype project]\ui.frontend.react.forms.af\.env` och ange formulärsökvägen. Till exempel /content/forms/af/contact
+   1. Öppna filen `[Archetype project]\ui.frontend.react.forms.af\.env` och ange formulärsökvägen. Till exempel /content/forms/af/contact
 
    1. Öppna kommandotolken och navigera till projektet ui.front.rea.forms.af och kör följande kommando:
 
       `npm run start`
 
    1. När du är klar öppnar du localhost:3000 i webbläsarfönstret för att visa återgivet Headless Adaptive-formulär.
-   1. Om du vill testa inskickningsfunktionen loggar du in på AEM Forms Server och använder **Förhandsgranska formuläret i HTML** om du vill öppna formuläret i förhandsgranskningsläge.
+   1. Logga in på AEM Forms Server och använd alternativet **Förhandsgranska formuläret i HTML** för att öppna formuläret i förhandsgranskningsläge om du vill testa överföringsfunktionen.
 
-The [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) innehåller en lista med komponenter och regler som kan anges för olika Headless Adaptive Forms tillsammans med ett exempel på JSON-schema för Headless Adaptive Forms. Du kan också titta på [specifikationer](/help/assets/Headless-Adaptive-Form-Specification.pdf) dokument med information om olika regler och egenskaper för Headless Adaptive Forms.
+[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) innehåller en lista över komponenter och regler som kan anges på olika Headless Adaptive Forms tillsammans med ett exempel på JSON-schema för Headless Adaptive Forms. Du kan även läsa i dokumentet [specifikationer](/help/assets/Headless-Adaptive-Form-Specification.pdf) om du vill veta mer om olika regler och egenskaper för Headless Adaptive Forms.

@@ -1,6 +1,6 @@
 ---
-title: Vanliga frågor
-description: Vanliga frågor
+title: Frågor och svar
+description: Frågor och svar
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -11,8 +11,8 @@ hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 1%
+source-wordcount: '423'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 -->
 
-## Kräver jag att Forms as a Cloud Service sandlåda använder Headless-formulär?
+## Kräver jag att Forms as a Cloud Service sandbox använder Headless-formulär?
 
 Du kan använda startappen för att börja utveckla och formatera dina Headless-formulär. Du behöver Forms as a Cloud Service för att hantera Headless-anpassade formulär tillsammans med backend-formulärfunktioner.
 
@@ -40,21 +40,21 @@ archetype project to deploy the finished Headless adaptive forms and correspondi
 
 ## Var kan jag förhandsgranska en Headless-blankett? {#storybook-example}
 
-Du kan använda startappen för att återge och förhandsgranska ett anpassat Headless-formulär. Du kan också ändra en [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction) exempel för att förhandsgranska ett Headless-formulär.
+Du kan använda startappen för att återge och förhandsgranska ett anpassat Headless-formulär. Du kan också ändra ett [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction)-exempel om du vill förhandsgranska ett Headless-anpassat formulär.
 
 ![](/help/assets/storybook-example.png)
 
 ## Går det att använda Headless-anpassade formulär med anpassade ramverk?
 
-Headless adaptive forms are based on [standardspecifikation](/help/assets/Headless-Adaptive-Form-Specification.pdf). Du kan utöka specifikationen och använda den för att skapa anpassade komponenter. Exempel: komponenter för Chakra-gränssnittet, Vue.js med flera.
+Headless adaptive forms are based on [standard specification](/help/assets/Headless-Adaptive-Form-Specification.pdf). Du kan utöka specifikationen och använda den för att skapa anpassade komponenter. Exempel: komponenter för Chakra-gränssnittet, Vue.js med flera.
 
 ## Har Headless adaptive forms stöd för överlappande fält?
 
-I överlappande fält beror innehållet i det andra fältet på det innehåll som väljs i det första fältet. The [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behavior—options&amp;args=formJson.items[0].fieldType:drop down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items son.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) innehåller ett exempel på överlappande fält.
+I överlappande fält beror innehållet i det andra fältet på det innehåll som väljs i det första fältet. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behavior—options&amp;args=formJson.items[0].fieldType:drop down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items son.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) innehåller ett exempel på överlappande fält.
 
 ## Kan man med Headless-anpassade blanketter förifylla blanketter med skräddarsydda data?
 
-Headless adaptive forms allows prefill forms with personalized data. The [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) innehåller ett exempel på hur du förifyller en Headless-blankett.
+Headless adaptive forms allows prefill forms with personalized data. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) innehåller ett exempel på hur du fyller i ett Headless-formulär i förväg.
 
 <!-- >
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?

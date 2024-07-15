@@ -10,10 +10,10 @@ role: Admin, Developer
 level: Beginner, Intermediate
 topic-tags: develop
 hide: true
-exl-id: 46df943c-0622-4b3b-a802-85c39ac6a734
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+exl-id: 07a71aac-de38-4839-b8d6-b47c3f575eb3
+source-git-commit: 999c3d092d03d7a82363bc94ce79ceb33bf0df7e
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2130'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Så här använder du AEM Forms för att enkelt skapa adaptiva Forms med hjälp 
 
 * **Affärsflexibilitet**: Som affärsanvändare kan jag enkelt skapa formulärupplevelser för flera kanaler.
 
-* **Framåtutvecklare**: Som frontutvecklare kan jag styra användarupplevelsen med headless-formulär.
+* **Framåtutvecklare**: Som klientutvecklare kan jag styra slutanvändarens upplevelse med headless-formulär.
 
 * **Utvecklarhastighet**: Som utvecklare kan jag enkelt och konsekvent anpassa webbplatser och Forms-komponenter.
 
@@ -38,11 +38,11 @@ Så här använder du AEM Forms för att enkelt skapa adaptiva Forms med hjälp 
 
 Så här använder du händerna på labbet:
 
-* Installera [senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare kan du läsa [Installerar Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* Installera den [senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare läser du [Installera Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
-* Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare, se [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
+* Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare läser du [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* [Aktivera Headless Adaptive Forms](enable-headless-adaptive-forms-and-core-components.md) i AEM 6.5 Forms.
+* [Aktivera Headless Adaptive Forms](enable-headless-adaptive-forms-and-core-components.md) i din Forms-miljö AEM 6.5.
 
 * Installera [Microsoft Visual Studio Code](https://code.visualstudio.com/download) eller en vanlig textredigerare. Exempel i dokument använder Microsoft Visual Studio Code.
 
@@ -61,11 +61,11 @@ I den här lektionen bekanta du dig med AEM 6.5 Forms genom att navigera i anvä
 1. Öppna webbläsaren och ange webbadressen till författarmiljön. Till exempel:
    [https://localhost:4502](https://localhost:4502).
 
-1. När du är inloggad navigerar du till användargränssnittet för AEM Forms. Klicka **Forms**.
+1. När du är inloggad navigerar du till användargränssnittet för AEM Forms. Klicka på **Forms**.
 
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
-1. Klicka **Forms och dokument**. Stäng alla popup-fönster som rör inställningar eller information.
+1. Klicka på **Forms &amp; Documents**. Stäng alla popup-fönster som rör inställningar eller information.
 
    ![](/help/assets/screenshot2028113929.png){width="50%" align="left"}
 
@@ -87,30 +87,30 @@ I den här lektionen, som företagsanvändare, skapar du ett adaptivt formulär 
 
 1. Skapa en slutpunkt för överföring av formuläret:
 
-   1. Öppna <https://requestbin.com/> på en ny flik i webbläsaren.
+   1. Öppna <https://requestbin.com/> på en ny webbläsarflik.
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
-   1. Klicka **Skapa en offentlig behållare** och kopiera slutpunkts-URL:en.
+   1. Klicka på **Skapa en offentlig bin** och kopiera URL:en för slutpunkten.
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Den här särskilda slutpunkten fungerar som ett exempel för att skicka och visa data. I den faktiska produktionen använder du din egen slutpunkt eller datakällor för att lagra hämtade data.
 
 1. Skapa ett anpassat formulär:
 
-   1. Navigera till AEM Forms webbgränssnitt och navigera till **Forms** > **Forms och dokument**.
+   1. Navigera till AEM Forms webbgränssnitt och gå till **Forms** > **Forms och dokument** på fliken för webbläsare som används i lektion 1.
 
-   1. Klicka **Skapa** och väljer Adaptiv form.
+   1. Klicka på **Skapa** och välj Adaptivt formulär.
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
-   1. Välj **Tom med kärnkomponenter** mall från mallurvalsskärmen som visas nedan och klicka på **Nästa**.
+   1. Välj mallen **Tom med kärnkomponenter** på mallvalsskärmen som visas nedan och klicka på **Nästa**.
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
-   1. Ange `Contact us` som **Titel** av formuläret. Se till att **Namn** formuläret är `contact-us`.
+   1. Ange `Contact us` som **rubrik** för formuläret. Kontrollera att formulärets **namn** är `contact-us`.
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
-   1. Klicka **Skapa**. En dialogruta visas.
+   1. Klicka på **Skapa**. En dialogruta visas.
 
-   1. Klicka på **Redigera**. Formuläret öppnas i Adaptiv formulärredigerare. Stäng alla popup-fönster eller dialogrutor för inställningar eller information.
+   1. Klicka på **Redigera** i dialogrutan. Formuläret öppnas i Adaptiv formulärredigerare. Stäng alla popup-fönster eller dialogrutor för inställningar eller information.
 
    1. Öppna webbläsaren Komponenter och dra och släpp panelkomponenten mitt på skärmen.
 
@@ -121,15 +121,15 @@ I den här lektionen, som företagsanvändare, skapar du ett adaptivt formulär 
       ![](/help/assets/contact-us-headless-adaptive-form.png){width="50%" align="left"}
 
 
-   1. Öppna Content Browser, klicka på egenskapsikonen för Guide Container och öppna dialogrutan **Inlämning** -fliken. Välj **Skicka till REST-slutpunkt** Skicka åtgärd väljer du **Aktivera begäran om POST** och ange REST-slutpunkt som skapats i lektion 2 i **URL för begäran om POST** och klicka på **Klar** -ikon.
+   1. Öppna Content Browser, klicka på egenskapsikonen för Guide Container och öppna fliken **Submission** . Markera **Skicka till REST-slutpunkten** Skicka-åtgärden, markera alternativet **Aktivera begäran om POST** och ange REST-slutpunkten som skapades i lektion 2 i textrutan **URL för begäran om POST**. Klicka sedan på ikonen **Klar** .
 
       ![](/help/assets/configure-submit-action.png){width="50%" align="left"}
 
-1. Publicera ett anpassat formulär:
+1. Publish och adaptiv form:
 
-   1. Öppna AEM, navigera till **Forms** > **Forms och dokument**. Markera formuläret som skapades i föregående steg och klicka på **Publicera**.
+   1. Öppna AEM, navigera till **Forms** > **Forms &amp; Documents**. Markera formuläret som skapades i föregående steg och klicka på **Publish**.
 
-   1. I dialogrutan Publicera resurser klickar du på **Publicera**. Meddelandet om att åtgärden lyckades visas.
+   1. Klicka på **Publish** i dialogrutan Publish Assets. Meddelandet om att åtgärden lyckades visas.
 
 ## Lektion 3
 
@@ -149,13 +149,13 @@ Konfigurera lokal databas för temat:
 
    ![](/help/assets/screenshot2028115829.png){width="50%" align="left"}
 
-1. Använd följande kommando på kommandotolken för att navigera till `c:\git` mapp.
+1. Använd följande kommando på kommandotolken för att navigera till mappen `c:\git`.
 
    ```Shell
    cd git
    ```
 
-   Om mappen inte finns använder du `md git` för att skapa den.
+   Om mappen inte finns skapar du den med kommandot `md git`.
 
 1. Använd följande kommando för att klona koden för temat Framtend:
 
@@ -163,7 +163,7 @@ Konfigurera lokal databas för temat:
    git clone -b WKND https://github.com/adobe/aem-forms-theme-canvas
    ```
 
-1. Använd följande kommando i listordningen för att navigera till **aem-forms-theme-canvas** och öppna Visual Studio Code.
+1. Använd följande kommando i den angivna ordningen för att navigera till katalogen **aem-forms-theme-canvas** och öppna Visual Studio-kod.
 
    ```Shell
    cd aem-forms-theme-canvas
@@ -172,11 +172,11 @@ Konfigurera lokal databas för temat:
 
    ![](/help/assets/screenshot2028126029.png){width="50%" align="left"}
 
-1. Välj **Författarna av alla filer i den överordnade mappen är betrodda** och klicka **Ja, jag litar på författarna**.
+1. Välj **Lita på författarna till alla filer i den överordnade mappen** och klicka på **Ja, jag litar på författarna**.
 
    ![](/help/assets/screenshot2028116229.png){width="50%" align="left"}
 
-1. Byt namn på `env_template` till .env.  Om du vill byta namn på filen högerklickar du på **env_template** och väljer **Byt namn** alternativ.
+1. Byt namn på filen `env_template` till .env.  Om du vill byta namn på filen högerklickar du på filen **env_template** och väljer alternativet **Byt namn** .
 
    ![](/help/assets/screenshot2028116429.png){width="30%" align="left"}
 
@@ -186,9 +186,9 @@ Konfigurera lokal databas för temat:
 
 1. Ange följande värden för variablerna i .env-filen och spara filen:
 
-   * **AEM_URL**: Ange URL för en **publicera** -instans. Till exempel, `https://localhost:4502/`
+   * **AEM_URL**: Ange URL för en **publish**-instans. Exempel: `https://localhost:4502/`
 
-   * **AEM_ADAPTIVE_FORM**: Ange formulärets namn. Till exempel, `contact-us`.
+   * **AEM_ADAPTIVE_FORM**: Ange formulärets namn. Exempel: `contact-us`.
 
    </br>
 
@@ -205,7 +205,7 @@ Konfigurera lokal databas för temat:
 
    >[!NOTE]
    >
-   > * Om du får ett meddelande där du ombeds att uppdatera npm via `npm notice Run npm nstall -g npm@9.6.0`ignorera meddelandet.
+   > * Om du får ett meddelande som ber om att uppdatera npm via kommandot `npm notice Run npm nstall -g npm@9.6.0`, ska du ignorera meddelandet.
    > * Kör inte andra npm-kommandon om inte annat anges i arbetsboken.
 
 1. Kör nu följande kommando för att förhandsgranska formuläret.
@@ -216,31 +216,31 @@ Konfigurera lokal databas för temat:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   När ovanstående kommando har körts väntar du på `webpack compiled` meddelande. Formuläret visas på en webbläsarflik.
+   När ovanstående kommando har körts väntar du på meddelandet `webpack compiled`. Formuläret visas på en webbläsarflik.
 
    >[!NOTE]
    >
-   >Om du får en tom skärm i webbläsaren när du har kört `npm run live` i mer än 3-4 minuter, ändra `localhost` i webbläsarens URL till 127.0.0.1 och tryck **Retur**.
+   >Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm run live` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Retur**.
 
 
    ![](/help/assets/contact-us-headless-adaptive-form-with-canvas-theme.png){width="50%" align="left"}
 
 
-1. Öppna dialogrutan `PROJECT\src\site\_variables.scss` -fil. Lägg märke till `$error` färgen är en skugga av RED.
+1. Öppna filen `PROJECT\src\site\_variables.scss` i Visual Studio Code. Observera att färgen `$error` är en skugga av RED.
 
    ![](/help/assets/screenshot2028120729.png){width="50%" align="left"}
 
-1. Skicka formuläret i webbläsaren för att se den röda färgen i **Förnamn** fält.
+1. Skicka formuläret i webbläsaren för att se den röda färgen i fältet **Förnamn**.
 
    ![](/help/assets/error-color-before.png)
 
-1. Ange **$error** färg till **#5736Web** och spara filen.
+1. Ställ in färgen **$error** på **#5736eb** och spara filen.
 
 1. Uppdatera webbläsaren och skicka formuläret. Observera att felfärgen i förnamnsfältet har ändrats därefter.
 
    ![](/help/assets/error-color-after.png)
 
-1. Tryck på i kommandotolken **CTRL+C**, ange **Y** och tryck **Retur** för att avsluta npm-processen. Det är viktigt att stoppa npm-servern så att den inte hamnar i konflikt med nästa uppsättning övningar.
+1. I kommandotolken trycker du på **CTRL+C**, anger **Y** och trycker på **Enter** för att avsluta npm-processen. Det är viktigt att stoppa npm-servern så att den inte hamnar i konflikt med nästa uppsättning övningar.
 1. Stäng fönster för Visual Studio-kod och kommandotolk.
 
 ## Lektion 4
@@ -261,7 +261,7 @@ Konfigurera lokal databas med hjälp av ett reaktionsstartprojekt:
 
    ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
 
-1. Använd följande kommando på kommandotolken för att navigera till `c:\git` mapp.
+1. Använd följande kommando på kommandotolken för att navigera till mappen `c:\git`.
 
    ```Shell
    cd git
@@ -275,7 +275,7 @@ Konfigurera lokal databas med hjälp av ett reaktionsstartprojekt:
 
    ![](/help/assets/screenshot2028117329.png)
 
-1. Använd följande kommandon i listordningen för att navigera till **response-starter-kit-aem-headless-forms** och öppna Visual Studio Code.
+1. Använd följande kommandon i den listade ordningen för att navigera till katalogen **rea-starter-kit-aem-headless-forms** och öppna Visual Studio Code.
 
    ```Shell
    cd react-starter-kit-aem-headless-forms
@@ -292,7 +292,7 @@ Konfigurera lokal databas med hjälp av ett reaktionsstartprojekt:
 
 Så här återger du formuläret som finns i publiceringsmiljön:
 
-1. Byt namn på filen env_template till .env. Om du vill byta namn högerklickar du på **env_template** och väljer **Byt namn** alternativ.
+1. Byt namn på filen env_template till .env. Om du vill byta namn högerklickar du på filen **env_template** och väljer alternativet **Byt namn** .
 
    ![](/help/assets/screenshot2028117629.png){width="30%" align="left"}
 
@@ -300,15 +300,15 @@ Så här återger du formuläret som finns i publiceringsmiljön:
 
 1. Ange följande värden för variablerna i .env-filen. Spara filen när du har uppdaterat variablerna.
 
-   * **AEM_URL**: Ange URL-adressen för publiceringsmiljön. Till exempel, `https://localhost:4503/`
+   * **AEM_URL**: Ange URL-adressen för publiceringsmiljön. Exempel: `https://localhost:4503/`
 
-   * **AEM_FORM_PATH**: Ange sökvägen till det adaptiva formulär som skapades i föregående lektion. Till exempel, `/content/forms/af/contact-us/`
+   * **AEM_FORM_PATH**: Ange sökvägen för det adaptiva formuläret som skapades i föregående lektion. Exempel: `/content/forms/af/contact-us/`
 
    </br>
 
    ![](/help/assets/lab65-starter-kit-environment-variable.png)
 
-1. Öppna kommandofönstret och kontrollera att du är vid **response-starter-kit-aem-headless-forms** och kör följande kommando:
+1. Öppna kommandofönstret, kontrollera att du är i katalogen **reak-starter-kit-aem-headless-forms** och kör följande kommando:
 
    ```Shell
    npm install
@@ -330,18 +330,18 @@ Så här återger du formuläret som finns i publiceringsmiljön:
    >[!NOTE]
    >
    > 
-   > Om du får en tom skärm i webbläsaren när du har kört `npm start` i mer än 3-4 minuter, ändra `localhost` i webbläsarens URL till 127.0.0.1 och tryck **Retur**.
+   > Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm start` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Retur**.
 
    ![](/help/assets/headless-adaptive-form-lab.png)
 
 Låt oss göra ändringar i formuläret på servern som företagsanvändare och automatiskt se ändringarna som återspeglas i det headless-formuläret.
 
-1. Öppna AEM Forms gränssnitt i webbläsaren. Till exempel: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Öppna AEM Forms gränssnitt i webbläsaren. Exempel: [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 
-1. Välj **Kontakta oss** formulär och klicka **Redigera.** Formuläret öppnas i Adaptiv Forms-redigerare.
+1. Markera formuläret **Kontakta oss** och klicka på **Redigera.** Formuläret öppnas i Adaptiv Forms-redigerare.
 
 
-1. Välj **Kontaktnummer** och klicka på **Ikonen Redigera (pennikonen)** i verktygsfältet. Om du inte kan se popup-verktygsfältet växlar du till redigeringsläget genom att klicka på **Redigera** överst till höger, vänster till **Förhandsgranska** -knappen.
+1. Markera fältet **Kontaktnummer** och klicka på ikonen **Redigera (pennikon)** i verktygsfältet. Om du inte kan se popup-verktygsfältet växlar du till redigeringsläget genom att klicka på knappen **Redigera** längst upp till höger, vänster till knappen **Förhandsgranska** .
 
    ![](/help/assets/change-field-title.png){width="50%" align="left"}
 
@@ -349,21 +349,22 @@ Låt oss göra ändringar i formuläret på servern som företagsanvändare och 
 
 Låt oss publicera det uppdaterade formuläret för att sprida ändringarna till publiceringsmiljön.
 
-1. På fliken AEM Forms hanteringsgränssnitt väljer du kontaktformuläret och klickar på **Avpublicera**. Om du inte ser **Avpublicera** går du vidare till steg 3 för att publicera ändringarna direkt.
+1. Markera kontaktformuläret på fliken för AEM Forms-hanteringsgränssnittet och klicka på **Avpublicera**. Om knappen **Avpublicera** inte visas går du vidare till steg 3 och publicerar ändringarna direkt.
 
 
-1. Klicka **Avpublicera**. Klicka **Stäng** i respektive dialogruta.
+1. Klicka på **Avpublicera**. Klicka på **Stäng** i respektive dialogruta.
 
-1. När webbläsaren har uppdaterats markerar du formuläret Kontakta oss och klickar på **Publicera**.
+1. När webbläsaren har uppdaterats markerar du kontaktformuläret och klickar på **Publish**.
 
 
-1. Klicka **Publicera**. Klicka **Stäng** i dialogrutan.
+1. Klicka på **Publish**. Klicka på **Stäng** i respektive dialogruta.
 
 1. Uppdatera webbläsarfliken med det headfria formuläret synligt. Observera att etiketten Kontaktnummer har ändrats till Mobilnummer.
 
    ![](/help/assets/headless-adaptive-form.png)
 
-1. Öppna kommandotolkfönstret som används för att starta **response-starter-kit-aem-headless-forms** projekt, tryck **CTRL+C** och sedan ange **Y** och tryck på Retur för att avsluta npm-processen. Det är viktigt att stoppa npm-servern så att den inte hamnar i konflikt med nästa uppsättning övningar.
+1. Öppna fönstret Kommandotolk som används för att starta projektet **responsstarter-kit-aem-headless-forms**, tryck på **CTRL+C** och sedan
+ange **Y** och tryck på Retur för att avsluta npm-processen. Det är viktigt att stoppa npm-servern så att den inte hamnar i konflikt med nästa uppsättning övningar.
 
 1. Stäng fönster för Visual Studio-kod och kommandotolk.
 
@@ -386,7 +387,7 @@ Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojek
 
    ![](/help/assets/screenshot2028115829.png){width="30%" align="left"}
 
-1. Använd följande kommando på kommandotolken för att navigera till `c:\git` mapp.
+1. Använd följande kommando på kommandotolken för att navigera till mappen `c:\git`.
 
    ```Shell
    cd git
@@ -408,7 +409,7 @@ Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojek
 
    ![](/help/assets/screenshot2028126529.png)
 
-1. Använd följande kommando i listordningen för att navigera till **response-starter-kit-aem-headless-forms** och öppna koden i Visual Studio Code:
+1. Använd följande kommando i den listade ordningen för att navigera till mappen **response-starter-kit-aem-headless-forms** och öppna koden i Visual Studio-koden:
 
    ```Shell
    cd react-starter-kit-aem-headless-forms
@@ -420,18 +421,18 @@ Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojek
 
 Så här återger du formuläret som finns i publiceringsmiljön:
 
-1. Byt namn på **env_template** fil till **.env** -fil. Om du vill byta namn högerklickar du på **env_template** fil och markera **Byt namn**.
+1. Byt namn på filen **env_template** till filen **.env**. Om du vill byta namn högerklickar du på filen **env_template** och väljer **Byt namn**.
 
    ![](/help/assets/screenshot2028126629.png){width="30%" align="left"}
 
-1. Ange följande värden för variablerna i .env-filen. Spara filen när du har uppdaterat variablerna. Använd **CTRL + S** växla kombination för att spara filen.
+1. Ange följande värden för variablerna i .env-filen. Spara filen när du har uppdaterat variablerna. Använd växlingskombinationen **CTRL + S** för att spara filen.
 
-   * **AEM_URL**: Ange URL-adressen för publiceringsmiljön. Till exempel: [https://localhost:4503](https://localhost:4503)
+   * **AEM_URL**: Ange URL-adressen för publiceringsmiljön. Exempel: [https://localhost:4503](https://localhost:4503)
 
-   * **AEM_FORM_PATH**: Ange sökvägen till det adaptiva formulär som skapades i föregående lektion. Till exempel /content/forms/af/contact-us/
+   * **AEM_FORM_PATH**: Ange sökvägen för det adaptiva formuläret som skapades i föregående lektion. Till exempel /content/forms/af/contact-us/
 
 
-1. Öppna kommandofönstret och kontrollera att du är vid **response-starter-kit-aem-headless-forms** och kör följande kommando:
+1. Öppna kommandofönstret, kontrollera att du är i katalogen **reak-starter-kit-aem-headless-forms** och kör följande kommando:
 
    ```Shell
    npm install
@@ -451,7 +452,7 @@ Så här återger du formuläret som finns i publiceringsmiljön:
 
    >[!NOTE]
    >
-   >Om du får en tom skärm i webbläsaren när du har kört `npm start` i mer än 3-4 minuter, ändra `localhost` i webbläsarens URL till 127.0.0.1 och tryck **Retur**.
+   >Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm start` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Retur**.
 
    ![](/help/assets/google-mui-form.png)
 
@@ -467,9 +468,9 @@ I den här lektionen lär du dig som gränssnittsutvecklare hur du skapar en alt
 
 ### Utövning
 
-Uppdatera variationen av komponenterna i det headless-projektet. Ändra varianten på textindatakomponenten i användargränssnittet till `OutlinedInput`:
+Uppdatera variationen av komponenterna i det headless-projektet. Så här ändrar du varianten för textindatakomponenten i användargränssnittet till `OutlinedInput`:
 
-1. I Visual Code navigerar du till textindatakomponenten genom att öppna `index.tsx` fil på `src/components/textinput/index.tsx`.
+1. I Visual Code navigerar du till textindatakomponenten genom att öppna filen `index.tsx` på `src/components/textinput/index.tsx`.
 
 1. Lägg till `//` i början av kodraden 104. Raden konverteras till en kommentar.
 
@@ -477,7 +478,7 @@ Uppdatera variationen av komponenterna i det headless-projektet. Ändra variante
    //const Cmp = \'outlined\' === appliedCssClassNames ? OutlinedInput: Input;
    ```
 
-1. Lägg till följande på rad 105 om du vill använda en annan variant av komponenten och spara filen. Använd **CTRL + S** växla kombination för att spara filen.
+1. Lägg till följande på rad 105 om du vill använda en annan variant av komponenten och spara filen. Använd växlingskombinationen **CTRL + S** för att spara filen.
 
    ```Shell
    const Cmp = OutlinedInput;
@@ -496,7 +497,8 @@ Uppdatera variationen av komponenterna i det headless-projektet. Ändra variante
    ![](/help/assets/screenshot2028127729.png){width="50%" align="left"}
 
 
-   Den här ändringen sker för slutanvändare utan att formulärdefinitionen på AEM Forms Server ändras och gäller specifikt för den aktuella huvudlösa kanalen. Webbkanal i det här labbet.
+   Den här ändringen sker för slutanvändare utan att formulärdefinitionen på AEM Forms Server ändras och gäller specifikt för headless
+den aktuella kanalen. Webbkanal i det här labbet.
 
    ![](/help/assets/aem65-lab-mui-style-update.png)
 
@@ -526,12 +528,12 @@ Nu när du har lärt dig hur man bygger Adaptive Forms och levererar dem till fl
 
 ## Resurser
 
-* [Introduktion av komponenter i adaptiv Form Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+* [Introduktion till kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
 
-* [Skapa adaptiv form med hjälp av kärnkomponenter](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Skapa anpassat formulär med hjälp av kärnkomponenter](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 * [Uppdatera format för grundkomponentbaserad AF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
-* [Använda startkit för Headless React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
+* [Använder startkit för Headless React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)

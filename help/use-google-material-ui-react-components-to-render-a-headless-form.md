@@ -10,7 +10,7 @@ hide: false
 exl-id: 476509d5-f4c1-4d1c-b124-4c278f67b1ef
 source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De här komponenterna har två primära syften: att styra utseendet eller format
 
 I den här självstudiekursen används komponenter i användargränssnittet för Google-material för att visa hur du återger ett Headless-formulär med anpassade React-komponenter. Du är dock inte begränsad till det här biblioteket och kan använda React Components Library eller utveckla egna anpassade komponenter.
 
-När denna artikel är avslutad har _Kontakta oss_ formulär som skapats i [Skapa och publicera ett headless-formulär med startkit](create-and-publish-a-headless-form.md) artikeln omvandlas till följande:
+När den här artikeln är avslutad omvandlas formuläret _Kontakta oss_ som skapats i [Skapa och publicera ett headless-formulär med hjälp av startkit](create-and-publish-a-headless-form.md) till följande:
 
 ![](assets/headless-adaptive-form-with-google-material-ui-components.png)
 
@@ -35,9 +35,9 @@ De största stegen som krävs för att återge ett formulär med hjälp av anvä
 
 ## 1. Installera Google Material UI
 
-Som standard används [Adobe Spectrum](https://spectrum.adobe.com/) -komponenter. Låt oss ange att den ska användas [Google Material UI](https://mui.com/):
+Som standard använder startsatsen [Adobe Spectrum](https://spectrum.adobe.com/) -komponenter. Låt oss ange att [Google-materialets användargränssnitt](https://mui.com/) ska användas:
 
-1. Kontrollera att startpaketet inte körs. Om du vill stoppa startsatsen öppnar du terminalen, navigerar till **response-starter-kit-aem-headless-forms** och tryck på Ctrl-C (samma sak i Windows, Mac &amp; Linux).
+1. Kontrollera att startpaketet inte körs. Om du vill stoppa startsatsen öppnar du terminalen, navigerar till **responsstarter-kit-aem-headless-forms** och trycker på Ctrl-C (samma i Windows, Mac &amp; Linux).
 
    Försök inte stänga terminalen. När du stänger terminalen stoppas inte startsatsen.
 
@@ -54,24 +54,24 @@ Det installerar Google Material UI npm-biblioteken och lägger till biblioteken 
 
 ## 2. Skapa anpassade React-komponenter
 
-Låt oss skapa en anpassad komponent som ersätter standard [textinmatning](https://spectrum.adobe.com/page/text-field/) komponent med [Textfält i Google-materialgränssnitt](https://mui.com/material-ui/react-text-field/) -komponenten.
+Låt oss skapa en anpassad komponent som ersätter standardkomponenten för [textindata](https://spectrum.adobe.com/page/text-field/) med komponenten [Google-textfält för material](https://mui.com/material-ui/react-text-field/).
 
-En separat komponent krävs för varje komponenttyp ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) eller :type) används i en Headless-formulärdefinition. I formuläret Kontakta oss som du skapade i föregående avsnitt kan du till exempel ange fälten Namn, E-post och Telefon `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) och meddelandefältet är av typen `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
-
-
-Låt oss skapa en anpassad komponent som täcker alla formulärfält som använder [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) egenskap med [Textfält i materialets användargränssnitt](https://mui.com/material-ui/react-text-field/) -komponenten.
+En separat komponent krävs för varje komponenttyp ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) eller :type) som används i en Headless-formulärdefinition. I formuläret Kontakta oss som du skapade i föregående avsnitt är till exempel fälten Namn, E-post och Telefon av typen `text-input` ([fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def)) och meddelandefältet av typen `multiline-input` ([&quot;fieldType&quot;: &quot;multiline-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/reference-json-properties-fieldtype--multiline-input)).
 
 
-Skapa den anpassade komponenten och mappa den anpassade komponenten med [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) egenskap:
-
-1. Öppna **response-starter-kit-aem-headless-forms** i en kodredigerare och navigera till `\react-starter-kit-aem-headless-forms\src\components`.
+Låt oss skapa en anpassad komponent för att täcka över alla formulärfält som använder egenskapen [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) med komponenten [Material UI Text Field](https://mui.com/material-ui/react-text-field/) .
 
 
-1. Skapa en kopia av **reglage** eller **richtext** och ändra namn på den kopierade mappen till **materialtextfält**. Slider och richtext är två exempel på anpassade komponenter som är tillgängliga i startappen. Du kan använda dessa för att skapa egna anpassade komponenter.
+Så här skapar du den anpassade komponenten och mappar den anpassade komponenten med egenskapen [fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) :
 
-   ![Den anpassade komponenten för materialtextfält i VSCode](/help/assets/richtext-custom-component-in-vscode.png)
+1. Öppna katalogen **response-starter-kit-aem-headless-forms** i en kodredigerare och navigera till `\react-starter-kit-aem-headless-forms\src\components`.
 
-1. Öppna `\react-starter-kit-aem-headless-forms\src\components\materialtextfield\index.tsx` och ersätta den befintliga koden med koden nedan. Den här koden returnerar och återger en [Textfält i Google-materialgränssnitt](https://mui.com/material-ui/react-text-field/) -komponenten.
+
+1. Skapa en kopia av mappen **slider** eller **richtext** och byt namn på den kopierade mappen till **materialtextfield**. Slider och richtext är två exempel på anpassade komponenter som är tillgängliga i startappen. Du kan använda dessa för att skapa egna anpassade komponenter.
+
+   ![Det anpassade materialtextfältskomponenten i VSCode](/help/assets/richtext-custom-component-in-vscode.png)
+
+1. Öppna filen `\react-starter-kit-aem-headless-forms\src\components\materialtextfield\index.tsx` och ersätt den befintliga koden med koden nedan. Den här koden returnerar och återger en [Google-textfältskomponent för materialgränssnitt](https://mui.com/material-ui/react-text-field/) .
 
 ```JavaScript
  
@@ -102,31 +102,31 @@ Skapa den anpassade komponenten och mappa den anpassade komponenten med [fieldTy
 ```
 
 
-The `state.visible` del kontrollerar om komponenten är inställd på att vara synlig. I så fall hämtas och visas fältets etikett med `richTextString(state?.label?.value)`.
+Delen `state.visible` kontrollerar om komponenten är inställd på att vara synlig. Om den är det hämtas etiketten för fältet och visas med `richTextString(state?.label?.value)`.
 
 ![](/help/assets/material-text-field.png)
 
 
-Din anpassade komponent `materialtextfield` är redo. Låt oss ställa in den här anpassade komponenten så att alla förekomster av  [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) med textfält för Google-materialgränssnitt.
+Din anpassade komponent `materialtextfield` är klar. Låt oss ställa in den här anpassade komponenten så att den ersätter alla förekomster av [fieldType: &quot;text-input&quot;](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/docs/adaptive-form-components-text-input-field--def) med Google materialgränssnittets textfält.
 
 ## 3. Mappa en anpassad komponent med headless-formulärfält
 
 Processen med att återge formulärfält med hjälp av bibliotekskomponenter från tredje part kallas för mappning. Du mappar varje ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input)) till motsvarande komponent i ett tredjepartsbibliotek.
 
-All mappningsrelaterad information läggs till i `mappings.ts` -fil. The `...mappings` programsats i `mappings.ts` filen refererar till standardmappningarna, som övertäcker ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) eller:type) med [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/) -komponenter.
+All mappningsrelaterad information läggs till i filen `mappings.ts`. Programsatsen `...mappings` i filen `mappings.ts` refererar till standardmappningarna, som överlappar ([fieldType](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-json-properties-fieldtype--text-input) eller :type) med [Adobe Spectrum](https://spectrum.adobe.com/page/text-field/) -komponenter.
 
-Lägga till mappning för  `materialtextfield` -komponent, som skapades i det sista steget:
+Så här lägger du till mappning för komponenten `materialtextfield` som skapades i det senaste steget:
 
-1. Öppna `mappings.ts` -fil.
+1. Öppna filen `mappings.ts`.
 
-1. Lägg till följande import-sats för att inkludera `materialtextfield` -komponenten till `mappings.ts` fil:
+1. Lägg till följande import-sats för att inkludera komponenten `materialtextfield` i filen `mappings.ts`:
 
 
    ```JavaScript
        import MaterialtextField from "../components/materialtextfield";
    ```
 
-1. Lägg till följande programsats för att mappa `text-input` med komponenten materialtextfield.
+1. Lägg till följande programsats för att mappa `text-input` med materialtextfältskomponenten.
 
 
    ```JavaScript
@@ -147,7 +147,7 @@ Lägga till mappning för  `materialtextfield` -komponent, som skapades i det si
         export default customMappings;
    ```
 
-1. Spara och kör programmet. De tre första fälten i formuläret återges med [Textfält i Google-materialgränssnitt](https://mui.com/material-ui/react-text-field/):
+1. Spara och kör programmet. De tre första fälten i formuläret återges med [Google-textfält för materialgränssnitt](https://mui.com/material-ui/react-text-field/):
 
    ![](assets/material-text-field-form-rendetion.png)
 

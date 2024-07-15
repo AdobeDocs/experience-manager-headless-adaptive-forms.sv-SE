@@ -41,16 +41,16 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 ### Komponent i implementering av Headless-anpassade formulär
 
-**Adobe Experience Manager Server**: Förutom att vara värd för Headless adaptive forms har Adobe Experience Manager följande backend-funktioner:
+**Adobe Experience Manager Server**: Tillsammans med att fungera som värd för Headless-adaptiva formulär erbjuder Adobe Experience Manager följande backend-funktioner:
 
 * RESTful APIs to list, fetch, pre-fill, validate, submit, track submit status of headless forms.
 * Visuell redigerare som enkelt tar fram en Headless-blankett.
 * Forms datamodell för att ta emot eller skicka data till olika datakällor.
 * Arbetsflödesmotor för att automatisera komplexa uppgifter.
 
-**Headless adaptive forms**: En Headless-anpassningsbar form representeras som en .json-fil. JSON-strukturen definierar komponenter, begränsningar och struktur i ett formulär.
+**Headless adaptive forms**: En Headless adaptive-form representeras som en .json-fil. JSON-strukturen definierar komponenter, begränsningar och struktur i ett formulär.
 
-**Front-end-appar**: Front-end-appar som SPA (Single Page Applications), Mobile Apps, JavaScript Apps, använder Headless-formulär (JSON Form Representation) och återger formuläret på en klient. Du kan använda React Renderer-komponenten som levereras med Headless adaptive-formulär för att återge ett adaptivt formulär eller skapa en egen anpassad komponent för att återge Headless-adaptiva formulär.
+**Front-end-appar**: Front-end-appar som SPA (Single Page Applications), Mobile Apps, JavaScript Apps, använder Headless-anpassade formulär (JSON Form Representation) och återger formuläret på en klient. Du kan använda React Renderer-komponenten som levereras med Headless adaptive-formulär för att återge ett adaptivt formulär eller skapa en egen anpassad komponent för att återge Headless-adaptiva formulär.
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -64,8 +64,8 @@ Följande verktyg hjälper dig att skapa och integrera Headless-formulär i dina
 
 **Forms Web SDK (Client-Side Runtime)**: Forms Web SDK är ett JavaScript-bibliotek på klientsidan. Det gör att du kan använda validering på klientsidan på formulärfält, behålla formulärets status och tillhandahåller kopplingar för att ansluta formulär med UI-lager eller adaptiva formuläråtergivna komponenter. Det gör det möjligt för kunder att validera begränsningar som tillämpas på olika fält i ett formulär och gör att man kan ansluta JSON-formulärstrukturen till användargränssnittets ramverk. Forms Web SDK har följande komponenter:
 
-* **Affärsregelprocessor**: Affärsregelprocessorn accepterar JSON-formulärstrukturen som indata, hanterar formulärfältens tillstånd, kör regler och händelsehanterare som finns i JSON.
-* **React binder**: Tillhandahåller kopplingar över kontrollenhet för att lägga till tillstånd i Form Components. Det är också användbart när du ska fylla i ett formulär i förväg.
+* **Affärsregelprocessor**: Affärsregelprocessorn accepterar formulärets JSON-struktur som indata, hanterar tillståndet för formulärfälten, kör regler och händelsehanterare som finns i JSON.
+* **Reagera binder**: Tillhandahåller hookar över kontrollenhet för att lägga till tillstånd i Form Components. Det är också användbart när du ska fylla i ett formulär i förväg.
 * **Komponentbibliotek**: Den innehåller React Spectrum-komponenter och använder kopplingar i React Binder-modulen för att lägga till tillstånd i dessa komponenter.
 
 Förutom att tillhandahålla API:er för att validera begränsningar som tillämpas på olika fält i ett formulär, tillhandahåller Forms Web SDK kopplingar för att ansluta Headless-anpassade formulär till UI-ramverket. Den innehåller även &#x200B; React Renderer för Headless-adaptiva formulär som hjälper dig att integrera ett Headless-adaptivt formulär i programmet. Följande komponenter i Web SDK är tillgängliga:
@@ -76,18 +76,18 @@ Förutom att tillhandahålla API:er för att validera begränsningar som tilläm
 
 Alla dessa komponenter ingår i AEM. När du skapar ett AEM Archetype 37-projekt eller senare för Headless-formulär inkluderas den senaste versionen av ovanstående bibliotek i projektet.
 
-**Startade program**: Adobe har också släppt ett startprogram som hjälper dig att snabbt komma igång med Headless-anpassade formulär.
+**Startat program**: Adobe har också släppt ett startprogram som hjälper dig att snabbt komma igång med Headless-anpassade formulär.
 
 <!-- **View Library (UI Layer)**: A custom form application built in a front-end language. You can use react, Angular, Flutter, NPM, Vue.js, Ionic, BootStrap, or any other language to built front end. You can also use the Headless adaptive forms Super Component, provided out-of-the-box, inside a react application to render a Headless adaptive form. Headless adaptive forms super component makes use of OOTB react spectrum -based form components to render the Headless adaptive form. 
 
 Core-Components: It enables use to render an Adaptive Form using JSON structure. It uses rule grammar to help create dynamic field interactions. The rule grammar is based on [JSON formula](http://github.com/adobe/json-formula/). You can develop your own renderer or embed the React based Adaptive Forms renderer, provided OOTB, in your front-end app to render the form. -->
 
-**Storybook**: [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) ger en översikt över olika komponenter i formulär som kan anpassas efter Headless. Den innehåller också en lista över alla komponenter som stöds, deras motsvarande egenskaper och begränsningar.
+**Storybook**: [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) innehåller en översikt över olika komponenter i Headless-anpassade formulär. Den innehåller också en lista över alla komponenter som stöds, deras motsvarande egenskaper och begränsningar.
 
 **Visual Studio Code Extension**: [Visual Studio Code extension](visual-studio-code-extension-for-headless-adaptive-forms.md) för att skapa en giltig JSON-struktur. Den har IntelliSense-stöd och -validering för JSON-formulärstruktur tillsammans med vanliga funktioner som att lägga till, ta bort eller byta namn på komponenter i en JSON-struktur.
 
-**Specifikationer för adaptiv Forms version 2.0**: Adaptiv Forms version 2.0-specifikation ger detaljerad information om alla komponenter, begränsningar och metoder som finns för att definiera Headless-anpassade formulär. Specifikationen finns i [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) format.
+Specifikationer för **Adaptiv Forms version 2.0**: Specifikationen Adaptiv Forms version 2.0 innehåller detaljerad information om alla komponenter, begränsningar och metoder som finns för att definiera adaptiva formulär utan Headless. Specifikationen är tillgänglig i formatet [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
 
-**HTTP- och JavaScript-API:er**: [HTTP-API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) gör att du kan lista, hämta, validera, skicka, spåra status för skicka formulär utan rubrik. [JS API:er](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) I kan du använda Headless-anpassade formulär med alla JavaScript-baserade gränssnittsramverk.
+**HTTP- och JavaScript-API:er**: [HTTP-API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) gör att du kan visa, hämta, validera, skicka och spåra status för headless-formulär. [JS API:er](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) hjälper dig att använda Headless-anpassade formulär med alla JavaScript-baserade gränssnittsramverk.
 
-**JSON-formel**: Det är en implementering av grammatik för formuläruttryck som hjälper dig att fråga efter JSON-struktur och skapa regler för Headless-anpassade formulär. Grammatiken är en kombination av kalkylbladsliknande funktioner och operatorer och [JMESPath](https://jmespath.org/) ett JSON-frågespråk. Du kan använda [playground](https://opensource.adobe.com/json-formula/dist/index.html) för att utforska JSON-formelsyntax och -funktioner.
+**JSON-formel**: Det är en implementering av formuläruttrycksgrammatik som hjälper dig att fråga efter JSON-struktur och skapa regler för Headless-adaptiva formulär. Grammatiken är en kombination av kalkylbladsliknande funktioner och operatorer och [JMESPath](https://jmespath.org/) är ett JSON-frågespråk. Du kan använda [playground](https://opensource.adobe.com/json-formula/dist/index.html) för att utforska JSON-formelsyntax och -funktioner.

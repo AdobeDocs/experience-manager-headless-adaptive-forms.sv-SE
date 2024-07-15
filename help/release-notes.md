@@ -5,7 +5,7 @@ hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
 source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '489'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ Välkommen till Experience Manager Headless Adaptive forms tidig adopter release
 
 Du kan använda Adobe Experience Manager Headless-formulär för att skapa blankettapplikationer med hjälp av gränssnittsramverk som React, Angular med mera och använda Adaptiv Forms Web SDK för funktioner som statshantering, validering och integrering med olika kontaktytor.
 
-Den tidiga releasen ger dig tillgång till formulär utan Headless-funktioner i en [lokal utvecklingsmiljö](setup-development-environment.md). Du kan använda den lokala utvecklingsmiljön för att skapa och testa Headless-formulär.
+Den tidiga utgåvan av en användare ger dig tillgång till formulär som kan användas utan Headless-funktioner i en [lokal utvecklingsmiljö](setup-development-environment.md). Du kan använda den lokala utvecklingsmiljön för att skapa och testa Headless-formulär.
 
 Headless adaptive forms are receive improvements on the stört basis. Besök sidan regelbundet för att hålla dig uppdaterad om den senaste utvecklingen. På den här sidan finns information om tidig åtkomst, de senaste versionerna, nya funktioner, förbättringar, felkorrigeringar, borttagen funktionalitet, specialinstruktioner och framtida planer för ändringar.
 
@@ -60,7 +60,7 @@ Forms Web SDK innehåller API:er för att validera begränsningar som tillämpas
 
 #### Storybook
 
-[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) ger en översikt över olika komponenter i formulär som kan anpassas efter Headless. Den innehåller också en lista över alla komponenter som stöds, deras motsvarande egenskaper och begränsningar.
+[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) innehåller en översikt över olika komponenter i formulär som kan anpassas utan Headless. Den innehåller också en lista över alla komponenter som stöds, deras motsvarande egenskaper och begränsningar.
 
 ### Forms Core Component
 
@@ -70,15 +70,15 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 
 ### Adaptiva Forms V2-specifikationer
 
-Headless adaptive forms specification provides a detailed information on all the components, constraints, and methods available to define Headless adaptive forms. Specifikationen finns i [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf) format.
+Headless adaptive forms specification provides a detailed information on all the components, constraints, and methods available to define Headless adaptive forms. Specifikationen är tillgänglig i formatet [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
 
 ### HTTP och JS API
 
-[HTTP-API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) gör att du kan lista, hämta, validera, skicka, spåra status för skicka formulär utan rubrik. [JS API:er](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) I kan du använda Headless-anpassade formulär med alla JavaScript-baserade gränssnittsramverk.
+Med [HTTP-API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) kan du visa, hämta, validera, skicka och spåra status för headless-formulär. [JS API:er](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) hjälper dig att använda Headless-anpassade formulär med alla JavaScript-baserade gränssnittsramverk.
 
 ### Visual Studio Code Extension
 
-[Visual Studio Code extension](visual-studio-code-extension-for-headless-adaptive-forms.md) för att skapa en giltig JSON-struktur. Den har IntelliSense-stöd och -validering för JSON-formulärstruktur tillsammans med vanliga funktioner som att lägga till, ta bort eller byta namn på komponenter i en JSON-struktur.
+[Visual Studio Code extension](visual-studio-code-extension-for-headless-adaptive-forms.md) om du vill skapa en giltig JSON-struktur. Den har IntelliSense-stöd och -validering för JSON-formulärstruktur tillsammans med vanliga funktioner som att lägga till, ta bort eller byta namn på komponenter i en JSON-struktur.
 
 <!-- ## What's next
 
