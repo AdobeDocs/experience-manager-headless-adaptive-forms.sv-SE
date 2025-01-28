@@ -9,7 +9,7 @@ level: Beginner, Intermediate
 keywords: headless, adaptive form, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Du kan använda startappen för att återge och förhandsgranska ett anpassat He
 
 ## Går det att använda Headless-anpassade formulär med anpassade ramverk?
 
-Headless adaptive forms are based on [standard specification](/help/assets/Headless-Adaptive-Form-Specification.pdf). Du kan utöka specifikationen och använda den för att skapa anpassade komponenter. Exempel: komponenter för Chakra-gränssnittet, Vue.js med flera.
+Headless adaptive forms are based on [standard specification](/help/assets/headless-adaptive-forms-specification.pdf). Du kan utöka specifikationen och använda den för att skapa anpassade komponenter. Exempel: komponenter för Chakra-gränssnittet, Vue.js med flera.
 
 ## Har Headless adaptive forms stöd för överlappande fält?
 
@@ -86,4 +86,4 @@ Ja, det finns ett tillägg för Microsoft Visual Studio Code. Det är ett bekvä
 
 ## Kan ett Headless-anpassat formulär ansluta till någon CRM för att läsa eller skriva data?
 
-Du kan använda Microsoft Dynamics och Salesforce för att skicka eller förifylla ett Headless-formulär. Förutom CRM:er har Headless adaptive forms stöd för att skicka eller förifylla med REST-slutpunkter, e-post och anpassade skicka-åtgärder.
+Du kan använda Microsoft Dynamics och Salesforce för att skicka eller förifylla ett formulär utan Headless-funktioner. Förutom CRM:er har Headless adaptive forms stöd för att skicka eller förifylla med REST-slutpunkter, e-post och anpassade skicka-åtgärder.
