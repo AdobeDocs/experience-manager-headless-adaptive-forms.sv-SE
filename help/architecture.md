@@ -76,7 +76,7 @@ Förutom att tillhandahålla API:er för att validera begränsningar som tilläm
 
 Alla dessa komponenter ingår i AEM. När du skapar ett AEM Archetype 37-projekt eller senare för Headless-formulär inkluderas den senaste versionen av ovanstående bibliotek i projektet.
 
-* **Kodspelaren**: [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) är en interaktiv miljö som är utformad för utvecklare som vill experimentera med, lära sig om och testa funktionerna i Headless Adaptive Forms.
+* **Kodspelaren**: [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=sv-SE) är en interaktiv miljö som är utformad för utvecklare som vill experimentera med, lära sig om och testa funktionerna i Headless Adaptive Forms.
 
 **Startat program**: Adobe har också släppt ett startprogram som hjälper dig att snabbt komma igång med Headless-anpassade formulär.
 

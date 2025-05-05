@@ -30,8 +30,8 @@ ht-degree: 0%
 + Skapa anpassade formulär utan rubrik {#authoring-headless-adaptive-forms}
    + [Skapa ett Headless-formulär med Adaptive Forms editor](create-a-headless-adaptive-form.md)
 + Utvecklarreferens {#developer-reference}
-   + [Utvecklarportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [Kodspelargrund](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [Utvecklarportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=sv-SE)
+   + [Kodspelargrund](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=sv-SE)
    + [Huvudlösa API:er för anpassade formulär](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Frågor och svar](faq.md)
 + [Felsökning](troubleshooting.md)

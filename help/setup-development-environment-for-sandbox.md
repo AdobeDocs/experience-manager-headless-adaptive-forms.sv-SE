@@ -23,9 +23,9 @@ ht-degree: 0%
 
 * Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/) på den lokala datorn. Om du inte har använt Node.js tidigare läser du [Så här installerar du Node.js](https://nodejs.dev/en/learn/how-to-install-nodejs).
 
-* Skapa ett AEM as a Cloud Service-program: Följ steg 1-7 i artikeln [Skapa program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program) för att skapa ett program för din organisation.
+* Skapa ett AEM as a Cloud Service-program: Följ steg 1-7 i artikeln [Skapa program](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program) för att skapa ett program för din organisation.
 
-* Aktivera [betaversionskanalen för Cloud Servicen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?cloud-environments).
+* Aktivera [betaversionskanalen för Cloud Servicen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=sv-SE&cloud-environments).
 
 ## Konfigurera arbetsflöde
 
@@ -42,7 +42,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud Service-prog
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -53,7 +53,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud Service-prog
   &#x200B;2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas.
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -64,7 +64,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud Service-prog
     &#x200B;3. För ditt program trycker du på ...-ikonen och väljer alternativet <b> Redigera program </b> . En dialogruta visas. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/edit-program.png">
     </a>
     <br>
@@ -75,7 +75,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud Service-prog
     &#x200B;4. Gå till fliken <b> Lösningar och tillägg </b> i dialogrutan Redigera program, välj alternativet <b> Forms - digital registrering </b> och tryck sedan på <b> update </b> . 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/program-solution-addons.png">
     </a>
     <br>
@@ -101,7 +101,7 @@ Så här klonar du databasen:
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/git-repo.png">
     </a>
     <br>
@@ -137,7 +137,7 @@ Så här klonar du databasen:
 
 Arketype-projektet är en maven-baserad mall. Det skapar ett minimalt projekt baserat på bästa praxis för att komma igång med Headless-anpassade formulär. Det innehåller även basfunktioner för Headless-anpassade formulär för Forms as a Cloud Service. Det är obligatoriskt att skapa och distribuera det arkitekturbaserade projektet 37 eller senare.
 ®®
-Beroende på vilket operativsystem du använder kör du kommandot maven för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Se [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) för att hitta den senaste versionen av Archetype.
+Beroende på vilket operativsystem du använder kör du kommandot maven för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Se [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE) för att hitta den senaste versionen av Archetype.
 
 +++ Microsoft® Windows
 
@@ -162,7 +162,7 @@ Beroende på vilket operativsystem du använder kör du kommandot maven för att
 * Ange `groupId` för att definiera Maven groupId och Java™ Source Package.
 * Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
 * Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera funktionen för Headless-anpassade formulär. När du aktiverar det här alternativet ingår följande:\
-* Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+* Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE).
 * En modul för frontindrag, `ui.frontend.react.forms.af`. Det hjälper dig att återge Headless-formulär i en responsapp.
 
 +++®®
@@ -191,7 +191,7 @@ Beroende på vilket operativsystem du använder kör du kommandot maven för att
 * Ange `groupId` för att definiera Maven groupId och Java™ Source Package.
 * Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
 * Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera funktionen för Headless-anpassade formulär. När du aktiverar det här alternativet ingår följande:\
-* Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+* Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE).
 * Modulen `ui.frontend.react.forms.af` för att reagera framåt. Det hjälper dig att återge Headless-formulär i en responsapp.
 
 +++
@@ -223,7 +223,7 @@ När kommandot har slutförts skapas en projektmapp med det namn som har angetts
 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager.png">
     </a>
     <br>
@@ -234,7 +234,7 @@ När kommandot har slutförts skapas en projektmapp med det namn som har angetts
   &#x200B;2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas. Öppna programmet. 
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/cloud-manager-experience-manager-launch.png">
     </a>
     <br>
@@ -245,7 +245,7 @@ När kommandot har slutförts skapas en projektmapp med det namn som har angetts
     &#x200B;3. Tryck på ikonen ... för din pipeline och välj alternativet <b> Kör </b> . Om du uppmanas att köra pipelinen trycker du på <b> Kör </b> och väntar på pipelinans <b> status </b> för att ändra till <b> Slutförd </b>.  
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?#create-program">
+    <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program.html?lang=sv-SE&#create-program">
       <img alt="AEM as a Cloud Service" src="assets/run-build-pipeline.png">
     </a>
     <br>

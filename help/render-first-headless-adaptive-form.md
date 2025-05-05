@@ -47,7 +47,7 @@ Så här skapar och återger du din första anpassade Headless-form:
 
 ### 1. Skapa och driftsätt AEM Arketype-baserat projekt {#create-an-archetype-based-project}
 
-Beroende på vilket operativsystem du använder kör du kommandot nedan för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Mer information finns i [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) för att hitta den senaste versionen av Archetype.
+Beroende på vilket operativsystem du använder kör du kommandot nedan för att skapa ett as a Cloud Service Experience Manager Forms-projekt. Använd arketype version 37 eller senare. Mer information finns i [Arketype-dokumentation](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=sv-SE) för att hitta den senaste versionen av Archetype.
 
 **Microsoft Windows**
 
@@ -71,7 +71,7 @@ Beroende på vilket operativsystem du använder kör du kommandot nedan för att
    * Ange `groupId` för att definiera Maven groupId och Java Source Package.
    * Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
    * Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera Forms-funktionalitet utan Headless. När du aktiverar det här alternativet ingår följande:
-      * Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+      * Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE).
       * En modul för frontindrag, `ui.frontend.react.forms.af`. Det hjälper dig att återge headless adaptive form i en responsapp.
 
 
@@ -97,7 +97,7 @@ Beroende på vilket operativsystem du använder kör du kommandot nedan för att
    * Ange `groupId` för att definiera Maven groupId och Java Source Package.
    * Använd alternativet `includeFormsenrollment=y` om du vill inkludera Forms-specifika konfigurationer, teman, mallar, kärnkomponenter och beroenden som krävs för att skapa Adaptiv Forms.
    * Använd alternativet `includeFormsheadless=y` om du vill inkludera Forms Core-komponenter och beroenden som krävs för att inkludera Forms-funktionalitet utan Headless. När du aktiverar det här alternativet ingår följande:
-      * Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en).
+      * Mallen **Tom med kärnkomponenter** med [kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE).
       * Modulen `ui.frontend.react.forms.af` påverkas av en klientdel. Det hjälper dig att återge headless adaptive form i en responsapp.
 
 När kommandot har slutförts skapas en projektmapp med det namn som har angetts i `appID`. Om du till exempel använder `appID` med värdet `myheadlessform` skapas en mapp med namnet `myheadlessform`. Det innehåller det Arketype-baserade projektet.
@@ -125,7 +125,7 @@ När du distribuerar projektet till din AEM SDK-instans läggs funktionen Headle
    Det kan ta lång tid att lösa beroendena och distribuera projektet. Om det inte går att distribuera projektet läser du [felsökning](troubleshooting.md) i artikeln om vanliga problem och deras lösning.
 
 
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=sv-SE#coding-against-the-right-aem-version) article : -->
 
 
 ### 3. Skapa ett JSON-schema med ett headless adaptivt format och överför det till din AEM SDK-instans {#create-add-json-representation-of-headless-adaptive-forms}
@@ -180,9 +180,9 @@ You can deploy the project to local development environment. It adds Headless Ad
 
     `mvn -PautoInstallPackage clean install`
 
-If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#building-and-installing).
+If you are on Windows, run the above with Administrative privileges (Run command prompt or [bash shell as an administrator](https://khushwantsehgal.wordpress.com/2022/06/29/check-if-git-bash-is-running-in-administrator-mode/)). For the complete list of commands, see [Building and Installing](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=sv-SE#building-and-installing).
     
-<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=en#coding-against-the-right-aem-version) article : -->
+<!-- *  To learn how to deploy code to AEM as a Cloud Service, see the video in [Deploying to AEM as a Cloud Service]https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=sv-SE#coding-against-the-right-aem-version) article : -->
 
 ### 4. Skapa ett adaptivt formulär baserat på mallen Tom med kärnkomponenter {#create-adaptive-form-with-blank-with-core-components-template}
 

@@ -75,7 +75,7 @@ Det är i ZIP-format. Versionen som stöds är aem-sdk-2022.7.8085.20220725T1403
 
    >[!NOTE]
    >
-   > Dubbelklicka inte på .jar-filen för att starta den. Det resulterar i ett [fel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=en#troubleshooting-double-click).
+   > Dubbelklicka inte på .jar-filen för att starta den. Det resulterar i ett [fel](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=sv-SE#troubleshooting-double-click).
 
 1. Öppna kommandotolken:
    * I Windows använder du alternativet **Kör som administratör** för att öppna kommandotolken i förhöjt läge.
