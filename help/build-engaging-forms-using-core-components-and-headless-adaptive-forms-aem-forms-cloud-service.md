@@ -85,6 +85,7 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
 
    1. Öppna <https://requestbin.com/> på en ny webbläsarflik.
    1. Klicka på **Skapa en offentlig bin** och kopiera URL:en för slutpunkten.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
@@ -92,23 +93,29 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
 1. Skapa ett anpassat formulär med hjälp av guidegränssnittet:
 
    1. Navigera till AEM Forms som Cloud Service och gå till Forms och Dokument på fliken Webbläsare som används i lektion 1.
+
       ![](/help/assets/screenshot2028114029.png)
 
    1. Klicka på **Skapa** och välj Adaptivt formulär.
+
       ![](/help/assets/screenshot2028114629.png)
 
    1. Välj mallen **Tom med kärnkomponenter** på mallvalsskärmen enligt nedan:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Klicka på fliken **Format** och välj temat **wk-theme** så som visas nedan:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
    1. Klicka på fliken **Överföring** och markera **Skicka till REST-slutpunktskortet** och ange det offentliga facket i fältet **URL för POST** enligt nedan:
+
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
    1. Klicka på **Skapa**. Ange ett namn och en rubrik för formuläret. Exempel: **registrering**. Klicka på **Skapa**.
 
    1. Den adaptiva formulärredigeraren öppnas. Stäng alla popup-fönster eller dialogrutor för inställningar eller information. Klicka på komponentwebbläsaren till vänster och lägg till komponenterna **Sidhuvud** och **Sidfot** i det tomma formulärets övre och nedre del.
+
       ![](/help/assets/screenshot2028121929.png)
 
    1. Dra och släpp komponenter från komponentwebbläsaren för att skapa ett formulär som liknar följande:
@@ -120,6 +127,7 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
    1. Klicka på komponenten **Telefonnummer** så att snabbmenyn visas. Klicka på ikonen **Förnya** på menyn för att konfigurera fältet.
 
    1. Öppna fliken **valideringar**, markera fältet **Obligatoriskt** och klicka på **Klar**. Meddelandet om att åtgärden lyckades visas.
+
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -131,9 +139,11 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
    1. Fyll i formuläret med provdata.
 
    1. Skicka formuläret.
+
       ![](/help/assets/screenshot2028125729.png)
 
    1. Kontrollera skickade data på fliken Begäranbehållare.
+
       ![](/help/assets/screenshot2028125829.png)
 
 1. Lägg till interaktivitet i formulär med regler:

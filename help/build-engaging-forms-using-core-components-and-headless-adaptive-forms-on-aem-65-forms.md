@@ -88,9 +88,11 @@ I den här lektionen, som företagsanvändare, skapar du ett adaptivt formulär 
 1. Skapa en slutpunkt för överföring av formuläret:
 
    1. Öppna <https://requestbin.com/> på en ny webbläsarflik.
+
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
    1. Klicka på **Skapa en offentlig bin** och kopiera URL:en för slutpunkten.
+
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
    Den här särskilda slutpunkten fungerar som ett exempel för att skicka och visa data. I den faktiska produktionen använder du din egen slutpunkt eller datakällor för att lagra hämtade data.
@@ -100,12 +102,15 @@ I den här lektionen, som företagsanvändare, skapar du ett adaptivt formulär 
    1. Navigera till AEM Forms webbgränssnitt och gå till **Forms** > **Forms och dokument** på fliken för webbläsare som används i lektion 1.
 
    1. Klicka på **Skapa** och välj Adaptivt formulär.
+
       ![](/help/assets/creating-adaptive-form-6-5.png){width="50%" align="left"}
 
    1. Välj mallen **Tom med kärnkomponenter** på mallvalsskärmen som visas nedan och klicka på **Nästa**.
+
       ![](/help/assets/creating-adaptive-form-6-5-select-blank-template.png){width="50%" align="left"}
 
    1. Ange `Contact us` som **rubrik** för formuläret. Kontrollera att formulärets **namn** är `contact-us`.
+
       ![](/help/assets/creating-adaptive-form-65-specify-title.png){width="50%" align="left"}
 
    1. Klicka på **Skapa**. En dialogruta visas.
