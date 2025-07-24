@@ -22,7 +22,7 @@ Genom att distribuera det AEM Archetype 4.1 eller senare-baserade projektet till
 
 Innan du aktiverar Headless Adaptive Forms i AEM 6.5 Forms-miljön,
 
-* [Uppgradera till AEM 6.5 Forms Service Pack 16 (6.5.16.0) eller senare](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
+* [Uppgradera till AEM 6.5 Forms Service Pack 16 (6.5.16.0) eller senare](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Installera den senaste versionen av [Apache Maven](https://maven.apache.org/download.cgi).
 
@@ -111,7 +111,7 @@ Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe
 
    När AEM Archetype-projektet har byggts skapas ett AEM Package. Paketet finns i [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip
 
-1. Använd [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) för att distribuera [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip-paketet på alla Author- och Publish-instanser.
+1. Använd [Package Manager](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) för att distribuera [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip-paketet på alla Author- och Publish-instanser.
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ Kärnkomponenterna är aktiverade för din miljö. En tom Core Components-basera
 
 ### Vilka är kärnkomponenterna?
 
-[Kärnkomponenterna](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
+[Kärnkomponenterna](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
 
 ### Vad finns det för funktioner för att aktivera kärnkomponenter?
 

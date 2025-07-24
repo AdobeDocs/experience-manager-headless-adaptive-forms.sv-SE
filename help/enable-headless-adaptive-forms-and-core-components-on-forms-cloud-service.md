@@ -303,7 +303,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
       git push origin
       ```
 
-1. [Kör pipeline](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/using/code-deployment) när filerna har implementerats i Git-databasen.
+1. [Kör pipeline](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-manager/content/using/code-deployment) när filerna har implementerats i Git-databasen.
 
    När pipeline-körningen har slutförts aktiveras adaptiva Forms Core-komponenter för motsvarande miljö. Dessutom har en adaptiv Forms-mall (Core Components) och Canvas 3.0-temat lagts till i din Forms as a Cloud Service-miljö, med alternativ för att anpassa och skapa Core Components-baserade Adaptive Forms.
 
@@ -312,7 +312,7 @@ Utför följande steg i listad ordning för att aktivera Headless Adaptive Forms
 
 ### Vilka är kärnkomponenterna? {#core-components}
 
-[Kärnkomponenterna](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
+[Kärnkomponenterna](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/introduction) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
 
 ### Vilka funktioner finns det för att aktivera kärnkomponenter? {#core-components-capabilities}
 

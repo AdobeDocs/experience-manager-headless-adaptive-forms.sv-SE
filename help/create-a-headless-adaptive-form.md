@@ -45,16 +45,16 @@ Du behöver följande för att skapa ett adaptivt formulär med den adaptiva For
 
 **För AEM Forms as a Cloud Service**
 
-* Åtkomst till en [AEM Forms as a Cloud Service-författarinstans](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) eller en [lokal AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) -miljö.
+* Åtkomst till en [AEM Forms as a Cloud Service-författarinstans](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service) eller en [lokal AEM Forms as a Cloud Service SDK](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment) -miljö.
 
 * **En adaptiv formulärmall**: En mall innehåller en grundläggande struktur och definierar utseendet (layouter och format) för ett adaptivt formulär. Den har förformaterade komponenter som innehåller vissa egenskaper och innehållsstruktur. Här finns också alternativ för att definiera ett tema och skicka en åtgärd. Temat definierar utseendet, känslan och skickaåtgärden definierar vilken åtgärd som ska vidtas när ett adaptivt formulär skickas in. Du kan till exempel skicka insamlade data till en datakälla. Molntjänsten tillhandahåller en OOTB-mall med namnet blank:
 
    * Mallen `blank Adaptive Forms (Core Components)` ingår i alla nya AEM Forms as a Cloud Service-program.
-   * Du kan också [skapa en ny anpassad Forms-mall (kärnkomponenter)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) från början.
+   * Du kan också [skapa en ny anpassad Forms-mall (kärnkomponenter)](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor) från början.
 
 * **Ett adaptivt formulärtema**: Ett tema innehåller formatinformation för komponenterna och panelerna. Format innehåller egenskaper som bakgrundsfärger, lägesfärger, genomskinlighet, justering och storlek. När du använder ett tema återspeglas det angivna formatet i motsvarande komponenter.  Mallen `Canvas` ingår i alla nya AEM Forms as a Cloud Service-program.
 
-* **Behörigheter**: Lägg till dina användare i gruppen [!DNL forms-users]. Medlemmarna i gruppen [!DNL forms-users] har behörighet att skapa ett anpassat formulär. En detaljerad lista med formulär för specifika användargrupper finns i [Grupper och behörigheter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
+* **Behörigheter**: Lägg till dina användare i gruppen [!DNL forms-users]. Medlemmarna i gruppen [!DNL forms-users] har behörighet att skapa ett anpassat formulär. En detaljerad lista med formulär för specifika användargrupper finns i [Grupper och behörigheter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks).
 
 
 ## Skapa ett adaptivt formulär {#create-an-adaptive-form-components}
@@ -77,9 +77,9 @@ Du behöver följande för att skapa ett adaptivt formulär med den adaptiva For
 
 1. (Valfritt) Välj en datamodell på fliken Data:
 
-   * **Formulärdatamodell**: Med en [formulärdatamodell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration) kan du integrera entiteter och tjänster från olika datakällor i ett adaptivt formulär. Välj Formulärdatamodell om det adaptiva formulär du skapar inbegriper att hämta och skriva data från och till flera datakällor.
+   * **Formulärdatamodell**: Med en [formulärdatamodell](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration) kan du integrera entiteter och tjänster från olika datakällor i ett adaptivt formulär. Välj Formulärdatamodell om det adaptiva formulär du skapar inbegriper att hämta och skriva data från och till flera datakällor.
 
-   * **JSON-schema**: [JSON-schema](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) Adaptiv Forms tillåter sömlös integrering med din organisations serversystem genom att ge möjlighet att associera ett JSON-schema, som representerar strukturen för de data som produceras eller förbrukas. Den här kopplingen gör det möjligt för författare att lägga till innehåll dynamiskt i det adaptiva formuläret med elementen i schemat. Under utvecklingen kan du snabbt komma åt schemaelement på fliken Datamodellobjekt i innehållsläsaren. När du skapar ett nytt anpassat formulär läggs alla fält automatiskt till.
+   * **JSON-schema**: [JSON-schema](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model) Adaptiv Forms tillåter sömlös integrering med din organisations serversystem genom att ge möjlighet att associera ett JSON-schema, som representerar strukturen för de data som produceras eller förbrukas. Den här kopplingen gör det möjligt för författare att lägga till innehåll dynamiskt i det adaptiva formuläret med elementen i schemat. Under utvecklingen kan du snabbt komma åt schemaelement på fliken Datamodellobjekt i innehållsläsaren. När du skapar ett nytt anpassat formulär läggs alla fält automatiskt till.
 
    Som standard markeras alla fält i det associerade JSON-schemat automatiskt och konverteras till motsvarande adaptiva formulärkomponenter, vilket effektiviserar redigeringsprocessen. I guiden kan du välja vilka fält som ska inkluderas i det anpassade formuläret med hjälp av kryssrutor.
 

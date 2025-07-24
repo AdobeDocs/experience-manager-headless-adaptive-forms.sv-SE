@@ -535,12 +535,12 @@ Nu vet ni hur ni bygger adaptiva formulär och levererar dem över alla kanaler 
 
 ## Resurser
 
-* [Introduktion till kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
+* [Introduktion till kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/sv/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Skapa anpassat formulär med hjälp av kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
+* [Skapa anpassat formulär med hjälp av kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Uppdatera format för grundkomponentbaserad AF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
+* [Uppdatera format för grundkomponentbaserad AF](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Headless Adaptive Forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
+* [Headless Adaptive Forms](https://experienceleague.adobe.com/sv/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Använda ett startpaket för Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
+* [Använda ett startpaket för Headless React](https://experienceleague.adobe.com/sv/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)
