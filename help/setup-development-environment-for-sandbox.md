@@ -40,6 +40,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud-tjänstprogr
 <tr>
   <td>
   1. Logga in på <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> och välj alternativet <b> Experience Manager </b> .
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -50,7 +51,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud-tjänstprogr
 </tr>
 <tr>
   <td>
-  2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas.
+  &#x200B;2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas.
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -61,7 +62,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud-tjänstprogr
 </tr>
 <tr>
   <td>
-    3. För ditt program trycker du på ...-ikonen och väljer alternativet <b> Redigera program </b> . En dialogruta visas. 
+    &#x200B;3. För ditt program trycker du på ...-ikonen och väljer alternativet <b> Redigera program </b> . En dialogruta visas. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -72,7 +73,7 @@ Aktivera `Forms - Digital enrolment`-lösningen för ditt AEM Cloud-tjänstprogr
 </tr>
 <tr>
   <td>
-    4. Gå till fliken <b> Lösningar och tillägg </b> i dialogrutan Redigera program, välj alternativet <b> Forms - digital registrering </b> och tryck sedan på <b> update </b> . 
+    &#x200B;4. Gå till fliken <b> Lösningar och tillägg </b> i dialogrutan Redigera program, välj alternativet <b> Forms - digital registrering </b> och tryck sedan på <b> update </b> . 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -98,6 +99,7 @@ Så här klonar du databasen:
 <tr>
   <td>
   1. I programmets pipeline-ruta trycker du på <b> Access Repo Info (Åtkomst till postinformation). </b> En dialogruta med databasinformation visas 
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -108,7 +110,7 @@ Så här klonar du databasen:
 </tr>
 <tr>
   <td>
-  2. Tryck på <b> Generera lösenord </b> och kopiera <b> databas-URL:en. </b> 
+  &#x200B;2. Tryck på <b> Generera lösenord </b> och kopiera <b> databas-URL:en. </b> 
   </td>
   <td>
       <img alt="AEM as a Cloud Service" src="assets/repository-info.png">
@@ -117,7 +119,7 @@ Så här klonar du databasen:
 </tr>
 <tr>
   <td>
-    3. Öppna kommandotolken på den lokala datorn, skapa en mapp och kör följande kommando och ange databasens autentiseringsuppgifter. Fråga:
+    &#x200B;3. Öppna kommandotolken på den lokala datorn, skapa en mapp och kör följande kommando och ange databasens autentiseringsuppgifter. Fråga:
     </br>
     <code> git clone [Repository URL] </code> </br></br>
     Till exempel: </br> 
@@ -220,6 +222,7 @@ När kommandot har slutförts skapas en projektmapp med det namn som har angetts
 <tr>
   <td>
   1. Logga in på <a href="https://experience.adobe.com/" > https://experience.adobe.com/ </a> och välj alternativet <b> Experience Manager </b> .
+
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -230,7 +233,7 @@ När kommandot har slutförts skapas en projektmapp med det namn som har angetts
 </tr>
 <tr>
   <td>
-  2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas. Öppna programmet. 
+  &#x200B;2. För alternativet <b> Cloud Manager </b> klickar du på <b> Starta. </b> En lista över program för din organisation visas. Öppna programmet. 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
@@ -241,7 +244,7 @@ När kommandot har slutförts skapas en projektmapp med det namn som har angetts
 </tr>
 <tr>
   <td>
-    3. Tryck på ikonen ... för din pipeline och välj alternativet <b> Kör </b> . Om du uppmanas att köra pipelinen trycker du på <b> Kör </b> och väntar på pipeline <b> Status </b> för att ändra till <b> Slutförd </b>.  
+    &#x200B;3. Tryck på ikonen ... för din pipeline och välj alternativet <b> Kör </b> . Om du uppmanas att köra pipelinen trycker du på <b> Kör </b> och väntar på pipeline <b> Status </b> för att ändra till <b> Slutförd </b>.  
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/onboarding/demo-add-on/create-program#create-program">
