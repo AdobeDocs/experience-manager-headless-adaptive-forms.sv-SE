@@ -1,5 +1,5 @@
 ---
-title: Frågor och svar
+title: Frågor och svar om Headless Adaptive Forms
 description: Frågor och svar
 solution: Experience Manager Forms
 feature: Adaptive Forms
@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, adaptive form, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: c46ac28e490a09d6f563c4b5673d30a53c277a69
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,8 @@ ht-degree: 0%
 
 ## Ska jag känna till React.js för att använda Headless adaptive-formulär?
 
-Du kan använda vilket ramverk, bibliotek eller språk som helst för att återge formulär som kan anpassas utan Headless och använda våra REST API:er för att validera och skicka formulären. AF-core-biblioteket, som tillhandahålls av OTB, är ramverksoberoende. Bibliotek för React Render och React Component (React-Render och React-komponenter), förutsatt att OTB finns, är till din bekvämlighet. Du kan utveckla egna komponenter och är inte begränsad till dessa.
+Du kan använda vilket ramverk, bibliotek eller språk som helst för att återge formulär som kan anpassas utan Headless och använda Adobe REST API:er för att validera och skicka formulären. AF-kärnbiblioteket, som du får direkt, är ramverksoberoende. Bibliotek för React Render och React Component (React-render och React-komponenter) som medföljer när du packar upp dem är till stor hjälp. Du kan skapa egna komponenter. Du begränsas inte till de som finns.
+
 
 <!-- 
 ## Did Adobe release a new AEM Archetype for Headless adaptive forms?
@@ -29,7 +30,7 @@ You can use Archetype 37 with flag `includeFormsheadless` or later flag to creat
 
 -->
 
-## Kräver jag att Forms as a Cloud Service sandbox använder Headless-formulär?
+## Kräver jag att Forms as a Cloud Service sandlåda använder formulär som kan anpassas utan headless?
 
 Du kan använda startappen för att börja utveckla och formatera dina Headless-formulär. Du behöver Forms as a Cloud Service för att hantera Headless-anpassade formulär tillsammans med backend-formulärfunktioner.
 
@@ -38,7 +39,7 @@ Du kan använda startappen för att börja utveckla och formatera dina Headless-
 You can use the starter app to start developing and styling your Headless adaptive forms. Later on, you can use the 
 archetype project to deploy the finished Headless adaptive forms and corresponding custom code, created using starter app, to Forms as a Cloud Service environment. The Forms as a Cloud Service environment helps you test and productionize the forms. -->
 
-## Var kan jag förhandsgranska en Headless-blankett? {#storybook-example}
+## Var kan jag få en förhandsvisning av en Headless-blankett? {#storybook-example}
 
 Du kan använda startappen för att återge och förhandsgranska ett anpassat Headless-formulär. Du kan också ändra ett [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction)-exempel om du vill förhandsgranska ett Headless-anpassat formulär.
 
@@ -50,11 +51,11 @@ Headless adaptive forms are based on [standard specification](/help/assets/headl
 
 ## Har Headless adaptive forms stöd för överlappande fält?
 
-I överlappande fält beror innehållet i det andra fältet på det innehåll som väljs i det första fältet. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behavior—options&amp;args=formJson.items[0].fieldType:drop down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items son.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) innehåller ett exempel på överlappande fält.
+För överlappande fält beror innehållet i det andra fältet på det innehåll som valts i det första fältet. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/adaptive-form-dynamic-behavior—options&args=formJson.items[0].fieldType:drop down;formJson.items[0].minimum:!undefined;formJson.items[0].maximum:!undefined;formJson.items[0].label.value:Choose+number+of+options;formJson.items[0].enum[0]:1;formJson.items son.items[0].enum[1]:2;formJson.items[0].enum[2]:3;formJson.items[1].fieldType:drop-down) innehåller ett exempel på överlappande fält.
 
 ## Kan man med Headless-anpassade blanketter förifylla blanketter med skräddarsydda data?
 
-Headless adaptive forms allows prefill forms with personalized data. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) innehåller ett exempel på hur du fyller i ett Headless-formulär i förväg.
+Headless adaptive forms allow prefill forms with personalized data. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) innehåller ett exempel på hur du fyller i ett Headless-formulär i förväg.
 
 <!-- >
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?
@@ -63,7 +64,7 @@ At this moment, you use the Adaptive Form Editor to specify the JSON structure a
 
 ## Kan jag använda Headless-anpassade formulär med Angular SPA?
 
-Du kan använda Web SDK för att integrera Headless-anpassade formulär med Angular SPA. Den är oberoende av alla ramverk. Du kan använda React SDK som referens.
+Du kan använda Web SDK för att integrera Headless-formulär med Angular SPA. Den är oberoende av alla ramverk. Du kan använda React SDK som referens.
 
 <!-- ## Should the `-r prerelease` switch be used every time to start the AEM SDK instance or only for the first time?
 
@@ -82,7 +83,7 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 
 ## Finns det någon plugin som underlättar utvecklingen för Headless AF?
 
-Ja, det finns ett tillägg för Microsoft Visual Studio Code. Det är ett bekvämt sätt att manuellt skapa Headless-anpassade JSON-formulär.
+Ja - med Visual Studio Code-tillägget kan du manuellt skapa headless adaptive-formulär i JSON.
 
 ## Kan ett Headless-anpassat formulär ansluta till någon CRM för att läsa eller skriva data?
 

@@ -1,6 +1,6 @@
 ---
 title: AEM Headless adaptive forms overview
-description: AEM Forms Headless Adaptive Forms är ett snabbt och effektivt sätt att skapa formulär för olika plattformar, som Headless eller Headful CMS, React applications, Single Page Applications (SPA), Web Apps, Mobile apps, Amazon Alexa, Google Assistant, WhatsApp med flera. Med Headless Adaptive Forms kan du effektivisera arbetet med att skapa formulär, så att det blir enklare att samla in data från användarna på olika enheter och plattformar.
+description: Skapa formulär en gång och leverera till CMS, React, SPA, webben, mobiler, Alexa, WhatsApp med mera med AEM Headless-anpassade formulär för snabb och skalbar datainhämtning.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Headless
@@ -10,25 +10,25 @@ keywords: Headless CMS, adaptive forms, Headless UI, Headful ful CMS, voice assi
 hide: true
 hidefromtoc: true
 exl-id: f6a383ea-684b-479d-a15f-8ebced75635e
-source-git-commit: 1f70e2bb0e5f12e8ee5d948ef1d3cd2935f2274f
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Introduktion
 
-Adobe Experience Manager (AEM) Headless Adaptive Forms är en lösning för att skapa och hantera headless-webbformulär inom Adobe Experience Manager. Med den här funktionen kan organisationer skapa, publicera och hantera interaktiva formulär som kan öppnas och interagera med via API:er, i stället för via ett traditionellt grafiskt användargränssnitt. AEM Headless Adaptive Forms ger större flexibilitet och skalbarhet när det gäller formulärutveckling och -driftsättning samt en förbättrad användarupplevelse tack vare möjligheten att skräddarsy formulärdesign och funktionalitet efter specifika behov. Genom att utnyttja funktionerna i AEM och headless-tekniken utgör den här lösningen en stabil plattform för att skapa, hantera och distribuera webbformulär för olika användningsområden och tillämpningar.
+Adobe Experience Manager (AEM) Headless Adaptive Forms är en lösning för att skapa och hantera headless-webbformulär inom Adobe Experience Manager. Med den här funktionen kan organisationer skapa, publicera och hantera interaktiva formulär som kan öppnas och interagera med via API:er, i stället för via ett traditionellt grafiskt användargränssnitt. AEM Headless adaptive Forms ger större flexibilitet och skalbarhet när det gäller formulärutveckling och -driftsättning, liksom en förbättrad användarupplevelse tack vare möjligheten att skräddarsy formulärdesign och funktionalitet efter specifika behov. Med hjälp av AEM och headless-tekniken utgör den här lösningen en stabil plattform för att skapa, hantera och distribuera webbformulär för olika användningsområden och tillämpningar.
 
 ![Skapa och återge ett formulär internt på alla webbplatser, i ett program eller i icke-visuella interaktioner](/help/assets/headless-forms-for-any-device.jpeg)
 
-Headless adaptive forms help you:
+Headless adaptive forms help you do the following:
 
-* bygga högkvalitativa flerkanalsformulär på valfritt programmeringsspråk
-* integrera formulär direkt i era datorprogram och mobilappar, webbplatser och chattapplikationer
-* återanvända era egna gränssnittskomponenter med blankettapplikationer
-* utnyttja kraften i [Adobe Experience Manager Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=sv-SE)
+* Bygg högklassiga flerkanalsblanketter i valfritt programmeringsspråk.
+* Integrera blanketter i dator och mobilappar, webbplatser och chattapplikationer.
+* Återanvänd era egna gränssnittskomponenter med blankettapplikationer.
+* Använder kraften i [Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 Dessutom kan du utveckla egna komponenter för att återge ett formulär med valfritt gränssnittsramverk och programmeringsspråk. Du kan också använda React-komponenter som finns färdiga för att återge en Headless-anpassningsbar form.
 

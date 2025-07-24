@@ -9,21 +9,21 @@ level: Beginner, Intermediate
 keywords: headless, adaptive forms, Visual Studio Code extension
 hide: false
 exl-id: 11960e91-6c09-48d4-9d57-37537f808cd4
-source-git-commit: 47ac7d03c8c4fa18ac3bdcef04352fdd1cad1b16
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
 # Microsoft Visual Studio Code-tillägg för Headless adaptive forms
 
-Om du använder Microsoft® Visual Studio Code som IDE kan du använda Adaptive Forms-tillägg för Microsoft Visual Studio Code. Tillägg:
+Om du använder Microsoft® Visual Studio Code som IDE (Integrated Development Environment) kan du använda det adaptiva Forms-tillägget för Microsoft Visual Studio Code. Tillägg:
 
-* Lägger till IntelliSense-funktioner för Adaptive Forms i Visual Studio Code
-* Hjälper till att validera och komplettera JSON-syntax automatiskt för komponenter i Headless-anpassade formulär
-* Här finns en panel där du enkelt kan navigera i strukturen för ett formulär utan adaptiv rubrik
-* Hjälper till att översätta ett anpassat formulär utan rubrik
+* Lägger till IntelliSense-funktioner för Adaptive Forms i Visual Studio Code.
+* Hjälper till att validera och komplettera JSON-syntaxen automatiskt för komponenter i Headless-anpassade formulär.
+* Navigerar enkelt strukturen i ett headless adaptivt formulär via en panel.
+* Hjälper till att översätta en Headless-anpassningsbar form.
 
 <!-- 
 
@@ -51,4 +51,4 @@ Adobe provides an extension for Microsoft&reg; Visual Studio Code to make it eas
    ![Installerar tillägg](/help/assets/install-extension.png)
 
 
-   Mer information om VSX-filer finns i [Microsoft Visual Studio Code Help](https://code.visualstudio.com/docs/editor/extension-marketplace#_install-from-a-vsix).
+   Mer information om VSX-filer finns i [Microsoft Visual Studio Code Help](https://code.visualstudio.com/docs/configure/extensions/extension-marketplace#_install-from-a-vsix).

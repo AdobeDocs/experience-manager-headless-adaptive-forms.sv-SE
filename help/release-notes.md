@@ -1,25 +1,35 @@
 ---
-title: AEM Headless adaptive forms Overview
-description: Översikt AEM formulär utan Headless-funktionalitet.
+title: AEM Headless Adaptive Forms - översikt
+description: Översikt över formulär som kan anpassas efter AEM Headless.
 hide: true
 exl-id: cd7c7972-376c-489f-a684-f479d92c37e7
-source-git-commit: 0127f8ddede38083f0932b0e8d7efdd0dd77c3a6
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 2%
+source-wordcount: '477'
+ht-degree: 3%
 
 ---
 
 
 # Versionsinformation
 
-Välkommen till Experience Manager Headless Adaptive forms tidig adopter release. Läs vidare för att få resurser och instruktioner för att komma igång och få det bästa i releasen.
+Välkommen till Experience Manager Headless adaptive forms tidig adopter release. Läs vidare för att få resurser och instruktioner för att komma igång och få det bästa i releasen.
 
-Du kan använda Adobe Experience Manager Headless-formulär för att skapa blankettapplikationer med hjälp av gränssnittsramverk som React, Angular med mera och använda Adaptiv Forms Web SDK för funktioner som statshantering, validering och integrering med olika kontaktytor.
+Använd Adobe Experience Manager headless adaptive forms för att skapa blankettapplikationer med ramverk som React, Angular med flera. Använd Adaptive Forms Web SDK för statshantering, validering och integration med ytterligare kontaktytor.
+
 
 Den tidiga utgåvan av en användare ger dig tillgång till formulär som kan användas utan Headless-funktioner i en [lokal utvecklingsmiljö](setup-development-environment.md). Du kan använda den lokala utvecklingsmiljön för att skapa och testa Headless-formulär.
 
-Headless adaptive forms are receive improvements on the stört basis. Besök sidan regelbundet för att hålla dig uppdaterad om den senaste utvecklingen. På den här sidan finns information om tidig åtkomst, de senaste versionerna, nya funktioner, förbättringar, felkorrigeringar, borttagen funktionalitet, specialinstruktioner och framtida planer för ändringar.
+Headless adaptive forms receive improvements on the current-basis. Besök sidan regelbundet för att hålla dig uppdaterad om den senaste utvecklingen. Den här sidan innehåller information om följande:
+
+* tidig åtkomst
+* senaste releaser
+* nya funktioner
+* förbättringar
+* felkorrigeringar
+* inaktuell funktion
+* specialinstruktioner
+* Framtida planer för ändringar
 
 <!-- 
 
@@ -50,7 +60,7 @@ AEM Forms as a Cloud Service SDK hjälper dig att skapa, lagra och hämta Headle
 
 ### Forms Web SDK
 
-Forms Web SDK innehåller API:er för att validera begränsningar som tillämpas på olika fält i ett formulär och länkar för att ansluta JSON-formulärstrukturen till gränssnittets ramverk. Den innehåller även &#x200B; React Renderer för Headless-adaptiva formulär som hjälper dig att integrera ett Headless-adaptivt formulär i programmet. Följande komponenter i Web SDK är tillgängliga:
+Forms Web SDK innehåller API:er för att validera begränsningar som tillämpas på olika fält i ett formulär och kopplingar för att ansluta formulärets JSON-struktur till gränssnittets ramverk. Den innehåller även &#x200B; React Renderer för Headless-adaptiva formulär som hjälper dig att integrera ett Headless-adaptivt formulär i programmet. Följande komponenter i Web SDK är tillgängliga:
 
 * **[@aemforms/af-response-components](https://www.npmjs.com/package/@aemforms/af-react-components)**
 * **[@aemforms/af-response-renderer](https://www.npmjs.com/package/@aemforms/af-react-renderer)**
@@ -60,21 +70,21 @@ Forms Web SDK innehåller API:er för att validera begränsningar som tillämpas
 
 #### Storybook
 
-[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) innehåller en översikt över olika komponenter i formulär som kan anpassas utan Headless. Den innehåller också en lista över alla komponenter som stöds, deras motsvarande egenskaper och begränsningar.
+[Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/) innehåller en översikt över de olika komponenterna i formulär som kan anpassas efter Headless. Den innehåller också en lista över alla komponenter som stöds, deras motsvarande egenskaper och begränsningar.
 
 ### Forms Core Component
 
 <!-- Forms components are the structural elements that constitute the content of the form being authored. These components provide various form fields and ability to customize those fields. -->
 
-De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (Web Content Management) som hjälper dig att snabba upp utvecklingstiden och minska underhållskostnaderna för formulären. Forms Container-komponenten är en kärnkomponent. Det hjälper dig att bädda in och återge en JSON-struktur av Headless adaptive form i Adaptive Forms editor av Forms as a Cloud Service SDK.
+De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (Web Content Management) som hjälper dig att snabba upp utvecklingsarbetet och minska underhållskostnaderna för formulären. Forms Container-komponenten är en kärnkomponent. Det hjälper dig att bädda in och återge en JSON-struktur av Headless adaptive form i Adaptive Forms Editor i Forms as a Cloud Service SDK.
 
 ### Adaptiva Forms V2-specifikationer
 
-Headless adaptive forms specification provides a detailed information on all the components, constraints, and methods available to define Headless adaptive forms. Specifikationen är tillgänglig i formatet [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
+Headless adaptive forms specification provides detailed information on all the components, constraints, and methods available to define Headless adaptive forms. Specifikationen är tillgänglig i formatet [PDF](/help/assets/Headless-Adaptive-Form-Specification.pdf).
 
 ### HTTP och JS API
 
-Med [HTTP-API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) kan du visa, hämta, validera, skicka och spåra status för headless-formulär. [JS API:er](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) hjälper dig att använda Headless-anpassade formulär med alla JavaScript-baserade gränssnittsramverk.
+[HTTP-API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) gör att du kan visa, hämta, validera, skicka och spåra status för headless-formulär. <!-- URL is 404! [JS APIs](https://opensource.adobe.com/aem-forms-af-runtime/jsdocs/) helps you use Headless adaptive forms with any JavaScript based UI framework. -->
 
 ### Visual Studio Code Extension
 

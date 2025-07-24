@@ -1,8 +1,8 @@
 ---
 title: Använd händelser för att hantera och skicka blankettdata utan behov av specialfunktioner
-description: Använd händelser för att hantera och skicka blankettdata utan behov av specialfunktioner
+description: Använd händelser för att hantera och skicka formulär med headless adaptive forms data.
 hide: false
-source-git-commit: ddd353329dfe5b47734d904b9a5e684051becc5b
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%
@@ -20,6 +20,6 @@ I den här artikeln visas data som skickas till en Rest-slutpunkt. Du kan konfig
 
 
 
-## Kommunicera med datamodellen med händelser
+## Använd händelser för att kommunicera med datamodellen
 
-## Skicka data till en datakälla med händelser
+## Använd händelser för att skicka data till en datakälla

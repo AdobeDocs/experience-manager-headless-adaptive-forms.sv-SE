@@ -5,7 +5,7 @@ description: Bygg engagerande Forms med kärnkomponenter och headless
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 exl-id: ef99ffe9-4a37-4f0a-a4d3-78976c92220f
-source-git-commit: bcc51bcae3b26cf20e7c0b5b75935bf69a991731
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
 source-wordcount: '2452'
 ht-degree: 0%
@@ -14,11 +14,13 @@ ht-degree: 0%
 
 # Bygg engagerande Forms med baskomponenter och Headless Adaptive Forms i AEM Forms as a Cloud Service {#build-engaging-forms-using-core-components-and-headless}
 
+<!-- This article is completely missing the image ALT tags (descriptions) for each added image asset. That is impacting the CQI score for Experience Manager in a negative way. Be sure you add the required missing image ALT tags.  -->
+
 ## Lab-översikt {#lab-overview}
 
-I det här praktiska labbet lär du dig:
+I detta praktiska labb lär du dig följande:
 
-Hur man använder AEM Forms för att enkelt skapa anpassningsbara formulär med hjälp av de senaste kärnkomponenterna som är förenliga med AEM Sites, möjliggör datainhämtning i flera kanaler genom att leverera de adaptiva formulären som headless-formulär till webben, mobiler och chatt. Du får också lära dig de effektivaste strategierna när det gäller format, anpassningar och gränssnittsutveckling.
+Hur man använder AEM Forms för att enkelt skapa anpassningsbara blanketter med hjälp av de senaste kärnkomponenterna. Dessa komponenter är förenliga med AEM Sites och möjliggör datainhämtning över flera kanaler genom att leverera de adaptiva formulären som headless-formulär till webben, mobiler och chatt. Du får också lära dig de effektivaste strategierna när det gäller format, anpassningar och gränssnittsutveckling.
 
 ## Viktiga uppgifter {#key-takeaways}
 
@@ -30,15 +32,15 @@ Hur man använder AEM Forms för att enkelt skapa anpassningsbara formulär med 
 
 ## Förutsättningar {#prerequisites}
 
-Så här använder du händerna på labbet:
+Så här använder du det här praktiska labbet:
 
 * Installera den [senaste versionen av Git](https://git-scm.com/downloads). Om du inte har använt Git tidigare läser du [Installera Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
 
 * Installera [Node.js 16.13.0 eller senare](https://nodejs.org/en/download/). Om du inte har använt Node.js tidigare läser du [Så här installerar du Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
 
-* [Aktivera adaptiva Forms Core-komponenter](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) för din AEM Forms as a Cloud Service miljö.
+* [Aktivera adaptiva Forms Core-komponenter](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md) för din AEM Forms as a Cloud Service-miljö.
 
-* Installera [Microsoft Visual Studio Code](https://code.visualstudio.com/download) eller en vanlig textredigerare. Exempel i dokument använder Microsoft Visual Studio Code.
+* Installera [Microsoft Visual Studio Code](https://code.visualstudio.com/download) eller en vanlig textredigerare. Exemplen i det här dokumentet använder Microsoft Visual Studio Code.
 
 
 
@@ -46,18 +48,17 @@ Så här använder du händerna på labbet:
 
 ### Syfte {#lesson-1-objectives}
 
-Bekanta dig med AEM Forms as a Cloud Service miljö.
+Bekanta dig med AEM Forms as a Cloud Service-miljö.
 
 ### Lektionssammanhang {#lesson-1-context}
 
-I den här lektionen bekanta du dig med AEM Forms as a Cloud Service-miljön genom att navigera i användargränssnittet.
+I den här lektionen lär du dig AEM Forms as a Cloud Service-miljö genom att navigera i användargränssnittet.
 
 ### Utövning {#lesson-1-excercise}
 
-1. Öppna webbläsaren och ange webbadressen till Cloud Servicens författarmiljö. Till exempel:
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Öppna webbläsaren och ange webbadressen till Cloud Service-redigeringsmiljö. <!-- URL is 404! EXPLAIN THE URL IS FOR ILLUSTRATION PURPOSES ONLY? For example: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html) -->
 
-1. Logga in i Cloud Servicens redigeringsmiljö.
+1. Logga in i Cloud Service redigeringsmiljö.
    ![](/help/assets/screenshot2028113829.png){width="50%" align="left"}
 
 1. Om du vill navigera till användargränssnittet i AEM Forms klickar du på **Forms > Forms &amp; Documents**.
@@ -83,39 +84,32 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
 
 1. Skapa en slutpunkt för överföring av formuläret:
 
-   1. Öppna <https://requestbin.com/> på en ny webbläsarflik.
+   1. Öppna <https://pipedream.com/requestbin> på en ny webbläsarflik.
    1. Klicka på **Skapa en offentlig bin** och kopiera URL:en för slutpunkten.
-
       ![](/help/assets/screenshot2028114329.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot202023-03-0120at206.10.0020pm.png){width="50%" align="left"}
 
 1. Skapa ett anpassat formulär med hjälp av guidegränssnittet:
 
-   1. Navigera till AEM Forms som Cloud Service och gå till Forms och Dokument på fliken Webbläsare som används i lektion 1.
-
+   1. Navigera till AEM Forms som Cloud Service webbgränssnitt och navigera till Forms och Dokument på fliken Webbläsare som används i lektion 1.
       ![](/help/assets/screenshot2028114029.png)
 
-   1. Klicka på **Skapa** och välj Adaptivt formulär.
-
+   1. Klicka på **Skapa** > **Adaptivt formulär**.
       ![](/help/assets/screenshot2028114629.png)
 
    1. Välj mallen **Tom med kärnkomponenter** på mallvalsskärmen enligt nedan:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.1520pm.png)
 
    1. Klicka på fliken **Format** och välj temat **wk-theme** så som visas nedan:
-
       ![](/help/assets/screenshot202023-03-0120at206.09.2320pm.png)
 
-   1. Klicka på fliken **Överföring** och markera **Skicka till REST-slutpunktskortet** och ange det offentliga facket i fältet **URL för POST** enligt nedan:
-
+   1. Klicka på fliken **Överföring** och välj kortet **Skicka till REST-slutpunkt** och ange det offentliga facket i fältet **URL för POST-begäran** enligt nedan:
       ![](/help/assets/screenshot202023-03-0120at206.09.5320pm.png)
 
-   1. Klicka på **Skapa**. Ange ett namn och en rubrik för formuläret. Exempel: **registrering**. Klicka på **Skapa**.
+   1. Klicka på **Skapa**. Ange ett namn och en titel i formuläret. Exempel: **registrering**. Klicka på **Skapa**.
 
-   1. Den adaptiva formulärredigeraren öppnas. Stäng alla popup-fönster eller dialogrutor för inställningar eller information. Klicka på komponentwebbläsaren till vänster och lägg till komponenterna **Sidhuvud** och **Sidfot** i det tomma formulärets övre och nedre del.
-
+   1. Den adaptiva formulärredigeraren öppnas. Stäng alla popup-fönster eller dialogrutor för inställningar eller information. Klicka på komponentwebbläsaren till vänster och lägg till komponenterna **Header** och **Footer** i det tomma formulärets övre och nedre del.
       ![](/help/assets/screenshot2028121929.png)
 
    1. Dra och släpp komponenter från komponentwebbläsaren för att skapa ett formulär som liknar följande:
@@ -127,7 +121,6 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
    1. Klicka på komponenten **Telefonnummer** så att snabbmenyn visas. Klicka på ikonen **Förnya** på menyn för att konfigurera fältet.
 
    1. Öppna fliken **valideringar**, markera fältet **Obligatoriskt** och klicka på **Klar**. Meddelandet om att åtgärden lyckades visas.
-
       ![](/help/assets/screenshot2028123529.png){width="50%" align="left"}
 
       ![](/help/assets/screenshot2028123629.png){width="50%" align="left"}
@@ -139,24 +132,22 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
    1. Fyll i formuläret med provdata.
 
    1. Skicka formuläret.
-
       ![](/help/assets/screenshot2028125729.png)
 
    1. Kontrollera skickade data på fliken Begäranbehållare.
-
       ![](/help/assets/screenshot2028125829.png)
 
-1. Lägg till interaktivitet i formulär med regler:
+1. Lägg till interaktivitet i formuläret med regler:
 
    1. Klicka på rutan **Markera om du vill få 5 % rabatt**. Klicka på ikonen Regler i alternativverktygsfältet. Alternativet Regelredigerare öppnas.
 
    1. Skapa en regel när alternativet **Markera kryssrutan för att få 5 % rabatt** är markerat inaktiveras alternativen för att använda kreditkort.
 
-1. Publish blanketten.
+1. Publicera formuläret.
 
    1. Öppna AEM Forms hanteringsgränssnitt, till exempel `https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments`, och välj formuläret.
 
-   1. Klicka på **Publish**.
+   1. Klicka på **Publicera**.
 
       ![](/help/assets/screenshot2028115629.png)
 
@@ -164,9 +155,9 @@ I den här lektionen kommer du som företagsanvändare att skapa ett anpassnings
 
       ![](/help/assets/screenshot2028115729.png)
 
-      Publicerings-URL:en för formuläret liknar `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
+      Den publicerade URL:en för formuläret liknar `https://publish-p105303-e986623.adobeaemcloud.com/content/forms/af/registration.html`.
 
-   1. Om du vill visa det publicerade formuläret ska du ersätta program-ID:t (pXXXXXX) och miljö-ID:t (eXXXXXX) i ovanstående URL med ID:n för
+   1. Om du vill visa det publicerade formuläret ersätter du program-ID:t (pXXXXXX) och miljö-ID:t (eXXXXXX) i ovanstående URL med ID:n för
 miljö.
 
 ## Lektion 3
@@ -181,7 +172,7 @@ I den här lektionen lär du dig hur du enkelt kan uppdatera formateringen för 
 
 ### Utövning
 
-Konfigurera lokal databas för temat:
+Konfigurera en lokal databas med temat:
 
 1. Öppna kommandotolken eller kommandotolken med administratörsbehörighet:
 
@@ -223,18 +214,17 @@ Konfigurera lokal databas för temat:
 
 1. Ange följande värden för variablerna i .env-filen och spara filen:
 
-   * **AEM_URL**: Ange molntjänstens publiceringsmiljö. Exempel: `https://publish-p105303-e986623.adobeaemcloud.com/`
+   * **AEM_URL**: Ange din molntjänstpubliceringsmiljö. Exempel: `https://publish-p105303-e986623.adobeaemcloud.com/`
 
    * **AEM_ADAPTIVE_FORM**: Ange sökvägen för formuläret. Om formulärsökvägen till exempel är `/content/forms/af/registration` blir värdet för den här variabeln `registration`.
 
      ![](/help/assets/screenshot2028116429.png){width="50%" align="left"}
 
-1. Skapa en lokal användare i AEM.
+1. Skapa en lokal användare i AEM-miljön.
 
    >[!NOTE]
-   > Så här skapar du en lokal användare:
-   > Gå till `AEM Home` > `Tools` > `Security` > `Users`
-   > Se till att användaren är medlem i gruppen för användare av formulär.
+   > Om du vill skapa en lokal användare går du till `AEM Home` > `Tools` > `Security` > `Users`.
+   > Kontrollera att användaren är medlem i gruppen för användare av formulär.
 
 
 1. Kör följande kommando i kommandotolken:
@@ -247,8 +237,8 @@ Konfigurera lokal databas för temat:
 
    >[!NOTE]
    >
-   > * Om du får ett meddelande som ber om att uppdatera npm via kommandot `npm notice Run npm nstall -g npm@9.6.0`, ska du ignorera meddelandet.
-   > * Kör inte andra npm-kommandon om inte annat anges i arbetsboken.
+   > * Om du får ett meddelande som ber om att uppdatera `npm` via kommandot `npm notice Run npm nstall -g npm@9.6.0`, ska du ignorera meddelandet.
+   > * Kör inte andra `npm`-kommandon, såvida du inte har instruerats i arbetsboken.
 
 1. Kör nu följande kommando för att förhandsgranska formuläret.
 
@@ -258,14 +248,14 @@ Konfigurera lokal databas för temat:
 
    ![](/help/assets/screenshot2028117229.png)
 
-   När ovanstående kommando har körts väntar du på meddelandet `webpack compiled` och du omdirigeras till en AEM inloggningssida.
+   När ovanstående kommando har körts väntar du på meddelandet `webpack compiled` och du omdirigeras till en inloggningssida för AEM.
 
-1. Klicka på **Logga in lokalt (endast administrationsuppgifter)** på AEM inloggningssida.
+1. Klicka på **Logga in lokalt (endast administrationsuppgifter)** på inloggningssidan för AEM.
 1. Ange inloggningsuppgifterna för den skapade lokala användaren och formuläret visas på en webbläsarflik.
 
    >[!NOTE]
    >
-   >Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm run live` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Retur**.
+   >Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm run live` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Enter**.
 
 
    ![](/help/assets/screenshot2028115129.png){width="50%" align="left"}
@@ -294,15 +284,15 @@ Konfigurera lokal databas för temat:
 
 ### Syfte
 
-Rendera formuläret till webb-/mobilgränssnitt och andra gränssnitt som en headless-form.
+Rendera formuläret till webb/mobil och andra gränssnitt som en headless-form.
 
 ### Lektionssammanhang
 
-I den här lektionen får du som frontutvecklare lära dig hur du kan återge den adaptiva formen som tidigare skapats som en headless-form med hjälp av ett ramverk för reaktionsspektrumdesign.
+I den här lektionen lär du dig hur du kan återge den adaptiva formen som du skapat tidigare som en rubrikfri form med hjälp av ett ramverk för React-spektrumdesign.
 
 ### Utövning
 
-Konfigurera lokal databas med hjälp av ett reaktionsstartprojekt:
+Konfigurera en lokal databas med hjälp av React Starter-projektet:
 
 1. Öppna kommandotolken med administratörsbehörighet.
 
@@ -314,7 +304,7 @@ Konfigurera lokal databas med hjälp av ett reaktionsstartprojekt:
    cd c:\git
    ```
 
-1. Använd följande kommando för att klona startprojektet för adaptiv formulärreaktion:
+1. Använd följande kommando för att klona det adaptiva formuläret Reagera-startprojekt:
 
    ```Shell
    git clone https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -339,21 +329,20 @@ Konfigurera lokal databas med hjälp av ett reaktionsstartprojekt:
 
 Så här återger du formuläret som finns i molntjänstens publiceringsmiljö:
 
-1. Byt namn på filen env_template till .env. Om du vill byta namn högerklickar du på filen **env_template** och väljer alternativet **Byt namn** .
+1. Byt namn på filen env_template till .env-filen. Om du vill byta namn högerklickar du på filen **env_template** och väljer alternativet **Byt namn** .
 
    ![](/help/assets/screenshot2028117629.png){width="50%" align="left"}
 
    ![](/help/assets/screenshot2028117729.png)
 
 1. Ange följande värden för variablerna i .env-filen. Spara filen när du har uppdaterat variablerna.
-
    * **AEM_URL**: Ange URL:en för molntjänstens publiceringsmiljö. Exempel: `https://publish-p105303-e986623.adobeaemcloud.com`
 
    * **AEM_FORM_PATH**: Ange sökvägen för det adaptiva formuläret som skapades i föregående lektion. Exempel: `/content/forms/af/registration/`
 
      ![](/help/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
-1. Öppna kommandofönstret, kontrollera att du befinner dig i katalogen response-starter-kit-aem-headless-forms och kör följande kommando:
+1. Öppna kommandofönstret, kontrollera att du är i katalogen **reak-starter-kit-aem-headless-forms** och kör följande kommando:
 
    ```Shell
    npm install
@@ -370,18 +359,18 @@ Så här återger du formuläret som finns i molntjänstens publiceringsmiljö:
 
    ![](/help/assets/screenshot2028118129.png)
 
-   Ovanstående kommando startar en lokal utvecklingsserver som skulle återge formulärdefinitionen som hämtats från AEM på ett headless sätt med hjälp av frontend-biblioteket för reaktionsspektrum.
+   Ovanstående kommando startar en lokal utvecklingsserver som skulle återge formulärdefinitionen som hämtades från AEM utan rubrik med hjälp av biblioteket React trum Front.
 
    >[!NOTE]
    >
    > 
-   > Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm start` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Retur**.
+   > Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm start` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Enter**.
 
    ![](/help/assets/screenshot2028118229.png)
 
-Låt oss kontrollera hur reglerna verkställs i den här rubrikfria formen:
+Låt oss kontrollera hur reglerna i den här rubrikfria formen verkställs:
 
-1. Markera kryssrutan **Markera kryssrutan för att få 5 % rabatt**. Det efterföljande alternativet för att använda kreditkort är inaktiverat.
+1. Markera kryssrutan **Markera kryssrutan för att få 5 % rabatt**. Det efterföljande alternativet för att ansöka om kreditkort är inaktiverat.
 
    ![](/help/assets/screenshot2028126229.png)
 
@@ -391,12 +380,12 @@ Låt oss kontrollera hur reglerna verkställs i den här rubrikfria formen:
 
 Låt oss göra ändringar i formuläret på servern som företagsanvändare och automatiskt se ändringarna som återspeglas i det headless-formuläret.
 
-1. Öppna AEM Forms gränssnitt i webbläsaren. Exempel: [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
+1. Öppna AEM Forms gränssnitt i webbläsaren. <!-- URL is 404. Consider saying the path is for illlustration purposes only. For example, [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments). -->
 
-1. Markera formuläret **kontakter** och klicka på **Redigera.** Formuläret öppnas i redigeraren för anpassade formulär.
+1. Markera formuläret **`contactus`** och klicka på **Redigera.** Formuläret öppnas i redigeraren för anpassade formulär.
 
 
-1. Markera fältet **Telefonnummer** och klicka på ikonen **Redigera (pennikonen)** i verktygsfältet. Om du inte kan se popup-verktygsfältet växlar du till redigeringsläget genom att klicka på knappen **Redigera** längst upp till höger, vänster till knappen **Förhandsgranska** .
+1. Markera fältet **Telefonnummer** och klicka på ikonen **Redigera (pennikonen)** i verktygsfältet. Om du inte kan se popup-verktygsfältet växlar du till redigeringsläget. Klicka på knappen **Redigera** överst till höger, vänster till **Förhandsgranska** .
 
    ![](/help/assets/screenshot2028119629.png)
 
@@ -404,15 +393,15 @@ Låt oss göra ändringar i formuläret på servern som företagsanvändare och 
 
    ![](/help/assets/screenshot2028119729.png)
 
-Låt oss publicera det uppdaterade formuläret för att sprida ändringarna till publiceringsmiljön.
+Låt oss publicera det uppdaterade formuläret för att sprida ändringarna till den publicerade miljön.
 
 1. Markera registreringsformuläret på fliken för AEM Forms-hanteringsgränssnittet och klicka på **Avpublicera**. Om knappen **Avpublicera** inte visas går du vidare till steg 3 och publicerar ändringarna direkt.
 
 1. Klicka på **Avpublicera**. Klicka på **Stäng** i respektive dialogruta.
 
-1. När webbläsaren har uppdaterats markerar du registreringsformuläret och klickar på **Publish**.
+1. När webbläsaren har uppdaterats markerar du registreringsformuläret och klickar på **Publicera**.
 
-1. Klicka på **Publish**. Klicka på **Stäng** i respektive dialogruta.
+1. Klicka på **Publicera**. Klicka på **Stäng** i respektive dialogruta.
 
 1. Uppdatera webbläsarfliken med det headfria formuläret synligt. Observera att telefonnummeretiketten har ändrats till Mobilnummer.
 
@@ -436,7 +425,7 @@ I den här lektionen lär du dig att återge den adaptiva formen som tidigare sk
 
 ### Utövning
 
-Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojekt:
+Konfigurera en lokal databas med hjälp av startprojektet för materialgränssnittet:
 
 1. Öppna kommandotolken med administratörsbehörighet.
 
@@ -449,7 +438,7 @@ Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojek
    cd c:\git
    ```
 
-1. Kör följande kommandon i den angivna ordningen för att skapa en mapp med namnet mui och navigera till multimappen med följande kommandon:
+1. Kör följande kommandon i den angivna ordningen för att skapa en mapp med namnet `mui` och navigera till mappen `mui` med följande kommandon:
 
    ```Shell
    mkdir mui
@@ -457,7 +446,7 @@ Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojek
    cd mui
    ```
 
-1. Använd följande kommando för att klona startprojektet för adaptiv formulärreaktion:
+1. Använd följande kommando för att klona det adaptiva formuläret Reagera-startprojekt:
 
    ```Shell
    git clone -b mui-lab https://github.com/adobe/react-starter-kit-aem-headless-forms
@@ -477,7 +466,7 @@ Konfigurera lokal databas med hjälp av huvudanvändargränssnittets startprojek
 
 Så här återger du formuläret som finns i molntjänstens publiceringsmiljö:
 
-1. Byt namn på filen **env_template** till filen **.env**. Om du vill byta namn högerklickar du på filen **env_template** och väljer **Byt namn**.
+1. Byt namn på filen **env_template** till filen **.env** . Om du vill byta namn högerklickar du på filen **env_template** och väljer **Byt namn**.
 
    ![](/help/assets/screenshot2028126629.png){width="50%" align="left"}
 
@@ -505,18 +494,18 @@ Så här återger du formuläret som finns i molntjänstens publiceringsmiljö:
 
    ![](/help/assets/screenshot2028127129.png)
 
-   Kommandot startar en lokal utvecklingsserver och återger formulärdefinitionen som hämtats från AEM på ett headless sätt med Google
+   Kommandot startar en lokal utvecklingsserver och återger den formulärdefinition som hämtats från AEM på ett headless sätt med Google
 Gränsbibliotek för materialgränssnitt.
 
    >[!NOTE]
    >
-   >Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm start` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Retur**.
+   >Om du får en tom skärm i webbläsaren efter att ha kört kommandot `npm start` i mer än 3-4 minuter ändrar du `localhost` i webbläsarens URL till 127.0.0.1 och trycker på **Enter**.
 
    ![](/help/assets/screenshot2028127229.png)
 
 1. Så här utvärderar du körningen av samma affärslogik i den här formuläråtergivningen:
 
-   Markera kryssrutan **om du vill få 5 % rabatt**. Det efterföljande alternativet **Vill du ansöka om kreditkortsformulär för Web.Finance Corporate?** inaktiveras.
+   Markera kryssrutan **om du vill få 5 % rabatt**. Det efterföljande alternativet **Vill du ansöka om `We.Finance` företagsformulär?** inaktiveras.
 
    ![](/help/assets/screenshot2028127329.png){width="50%" align="left"}
 
@@ -528,7 +517,7 @@ Skapa ett alternativt utseende och känsla för den headless-formen med material
 
 ### Lektionssammanhang
 
-I den här lektionen lär du dig som gränssnittsutvecklare hur du skapar en alternativ representation av olika komponenter med hjälp av materialgränssnittet för det adaptiva formulär som tidigare skapats av företagsanvändaren.
+I den här lektionen lär du dig hur du skapar en alternativ representation av olika komponenter. Du använder materialgränssnitt för den adaptiva formen som skapades tidigare av företagsanvändaren.
 
 ### Utövning
 
@@ -550,7 +539,7 @@ Uppdatera variationen av komponenterna i det headless-projektet. Så här ändra
 
    ![](/help/assets/screenshot2028127629.png)
 
-   Det är viktigt att använda korrekt skiftläge för &#39;OutlinedInput&#39;-varianten, annars misslyckas kompileringen. Kompileringen av den lokala utvecklingsmiljön startar automatiskt i kommandotolken. Vänta tills följande meddelande visas
+   Det är viktigt att använda korrekt skiftläge för varianten OutlinedInput, annars misslyckas kompileringen. Kompileringen av den lokala utvecklingsmiljön startar automatiskt i kommandotolken. Vänta tills följande meddelande visas
 
    `webpack 5.75.0 compiled with 3 warnings in 6659 ms`
    `inside proxy req`
@@ -562,25 +551,25 @@ Uppdatera variationen av komponenterna i det headless-projektet. Så här ändra
 
 
    Den här ändringen sker för slutanvändare utan att formulärdefinitionen på AEM Forms Server ändras och gäller specifikt för headless
-den aktuella kanalen. Webbkanal i det här labbet.
+den aktuella kanalen. En webbkanal i det här labbet.
 
    ![](/help/assets/screenshot2028127529.png){width="50%" align="left"}
 
 
-1. Stäng Visual Studio-kod och kommandotolken i Windows.
+1. Stäng fönster för Visual Studio-kod och kommandotolk.
 
 ## Vanliga frågor och svar
 
-+++ Är guiden Adaptiv blankett tillgänglig offentligt?
++++ Är Adaptiv formulärguide tillgänglig för allmänheten?
 
-Ja, det finns med AEM Forms som Cloud Service.
+Ja, det kan köpas med AEM Forms som Cloud Service.
 
 +++
 
 
 +++ Är kärnkomponenterna tillgängliga för allmänheten?
 
-Ja, de adaptiva kärnkomponenterna i Forms finns tillgängliga med AEM Forms som Cloud Service.
+Ja, kärnkomponenterna i Adaptiv Forms finns i AEM Forms som Cloud Service.
 
 +++
 
@@ -596,7 +585,7 @@ Nej, Headless-formulär använder samma licensvärde, antal formulärinskickade 
 
 +++
 
-+++ Finns kärnkomponenter och headless-formulär med AEM 6.5 Forms?
++++ Finns det baskomponenter och Headless-blanketter i AEM 6.5 Forms?
 
 Ja, både adaptiva formulär och headless-komponenter finns tillgängliga med AEM Forms 6.5 Service Pack 16 och senare.
 
@@ -605,16 +594,17 @@ Ja, både adaptiva formulär och headless-komponenter finns tillgängliga med AE
 
 ## Nästa steg
 
-Nu när ni har lärt er att skapa anpassningsbara formulär och leverera dem till flera kanaler med hjälp av headless-formulär, bör ni försöka att använda era nya kunskaper i praktiken. Ha kul och gör det bara genom att skapa och leverera enastående datainhämtningsupplevelser till slutanvändarna, var de än är, i stor skala!
+Nu vet ni hur ni bygger adaptiva formulär och levererar dem över alla kanaler med headless-formulär. Använd dessa kunskaper för att skapa skalbara, högkvalitativa datainhämtningsupplevelser oavsett var användarna är.
+
 
 ## Resurser
 
-* [Introduktion till kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE)
+* [Introduktion till kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)
 
-* [Skapa anpassat formulär med kärnkomponenter](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Skapa ett adaptivt formulär med kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components)
 
-* [Uppdatera format för grundkomponentbaserad AF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=sv-SE)
+* [Uppdatera format för grundkomponentbaserad AF](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)
 
-* [Headless adaptive forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=sv-SE)
+* [Headless adaptive forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)
 
-* [Använder startkit för Headless React](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=sv-SE)
+* [Använda ett startpaket för Headless React](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form)

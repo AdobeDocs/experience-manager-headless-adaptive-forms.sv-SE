@@ -1,14 +1,13 @@
 ---
 title: Aktivera Headless Adaptive Forms i AEM 6.5 Forms
 seo-title: Step-by-Step Guide for enabling Headless Adaptive Forms on AEM 6.5 Forms
-description: Lär dig hur du aktiverar headless adaptive forms på AEM 6.5 Forms med vår steg-för-steg-guide. Vår självstudiekurs leder dig genom processen och gör det enkelt att integrera den här kraftfulla funktionen på din webbplats och förbättra användarupplevelsen.
-seo-description: Learn how to enable headless adaptive forms on AEM 6.5 Forms with our step-by-step guide. Our tutorial walks you through the process, making it easy to integrate this powerful feature into your website and improve your user experience.
+description: Lär dig hur du aktiverar Headless Adaptive-formulär i AEM 6.5 Forms med Adobe steg-för-steg-guide. I den här självstudiekursen får du hjälp med processen så att du enkelt kan integrera den här kraftfulla funktionen på webbplatsen och förbättra användarupplevelsen.
 contentOwner: Khushwant Singh
 role: Admin
 exl-id: e1a5e7e0-d445-4cca-b8d7-693d9531f075
-source-git-commit: d791daa149d0380b03bb6ba9776db47440feea02
+source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -17,19 +16,19 @@ ht-degree: 0%
 
 Om du vill aktivera Headless Adaptive Forms i din AEM 6.5 Forms-miljö skapar du ett projekt baserat på AEM Archetype 41 eller senare och distribuerar det till alla dina Author- och Publish-instanser.
 
-Genom att distribuera det AEM Archetype 4.1 eller senare-baserade projektet till dina AEM 6.5 Forms-instanser får du möjligheten att [skapa Core Components-baserade Adaptive Forms](create-a-headless-adaptive-form.md). Dessa formulär representeras i JSON-format och används som Headful and Headless Adaptive Forms, vilket ger större flexibilitet och anpassning i en rad olika kanaler, inklusive mobilappar, webbapplikationer och inbyggda appar.
+Genom att distribuera det AEM Archetype 4.1 eller senare-baserade projektet till dina AEM 6.5 Forms-instanser får du möjligheten att [skapa Core Components-baserade Adaptive Forms](create-a-headless-adaptive-form.md). Dessa formulär representeras i JSON-format och används både som `Headful` och `Headless` Adaptiv Forms, vilket ger större flexibilitet och anpassning i en rad olika kanaler, inklusive mobilappar, webbappar och inbyggda appar.
 
 ## Förutsättningar {#prerequisites}
 
-Innan du aktiverar Headless Adaptive Forms i AEM 6.5 Forms-miljö,
+Innan du aktiverar Headless Adaptive Forms i AEM 6.5 Forms-miljön,
 
-* [Uppgradera till AEM 6.5 Forms Service Pack 16 (6.5.16.0) eller senare](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=sv-SE).
+* [Uppgradera till AEM 6.5 Forms Service Pack 16 (6.5.16.0) eller senare](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-current-service-pack-installation-instructions).
 
 * Installera den senaste versionen av [Apache Maven](https://maven.apache.org/download.cgi).
 
 * Installera en vanlig textredigerare. Exempel: Microsoft Visual Studio Code.
 
-## Skapa och driftsätt de senaste AEM Archetype-baserade projekten
+## Skapa och driftsätt det senaste AEM Archetype-baserade projektet
 
 Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe/aem-project-archetype)-baserat projekt och distribuerar det till alla dina Author- och Publish-instanser:
 
@@ -51,7 +50,7 @@ Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe
       -D aemVersion="6.5.23" 
    ```
 
-   * Linux eller Apple macOS
+   * Linux® eller Apple macOS
 
    ```Shell
       mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
@@ -67,7 +66,7 @@ Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe
 
    När du kör ovanstående kommando bör du tänka på följande:
 
-   * Uppdatera kommandot så att det återspeglar de specifika värdena för miljön, inklusive appTitle, appId och groupId. Ange också värdena för includeFormsenrollment till y. Om du använder Forms Portal anger du alternativet _includeExamples=y_ för att inkludera Forms Portal Core Components i ditt projekt.
+   * Uppdatera kommandot så att det återspeglar de specifika värdena för miljön, inklusive appTitle, appId och groupId. Ange också värdena för includeFormsenrollment till `y`. Om du använder Forms Portal anger du alternativet _includeExamples=y_ för att inkludera Forms Portal Core Components i ditt projekt.
 
 
 1. (Endast för Arketype version 4.1-baserade projekt) När AEM Archetype-projektet har skapats kan du aktivera teman för Core Components-baserade Adaptive Forms. Så här aktiverar du teman:
@@ -112,22 +111,22 @@ Så här skapar du ett AEM Archetype 41- eller [senare](https://github.com/adobe
 
    När AEM Archetype-projektet har byggts skapas ett AEM Package. Paketet finns i [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip
 
-1. Använd [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=sv-SE) för att distribuera [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip-paketet på alla Author- och Publish-instanser.
+1. Använd [Package Manager](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager) för att distribuera [AEM Archetype Project Folder]\all\target\[appid].all-[version].zip-paketet på alla Author- och Publish-instanser.
 
 >[!NOTE]
 >
 >
 >
->Om du får problem med att komma åt inloggningsdialogrutan på en publiceringsinstans för att installera paketet via pakethanteraren kan du försöka med att logga in via följande URL: http://[Publiceringsserver-URL]:[PORT]/system/console. Detta ger dig tillgång till inloggning på Publish-instansen, vilket gör att du kan fortsätta med installationsprocessen.
+>Om du får problem med att komma åt inloggningsdialogrutan på en publiceringsinstans för att installera paketet via pakethanteraren kan du försöka med att logga in via följande URL: `http://[Publish Server URL]`:[PORT]/system/console. Den här processen ger dig åtkomst till att logga in på Publishing-instansen och låter dig fortsätta med installationsprocessen.
 
 
 Kärnkomponenterna är aktiverade för din miljö. En tom Core Components-baserad Adaptive Form-mall och Canvas 3.0-tema distribueras till din miljö, vilket gör att du kan [skapa Core Components-baserade Adaptive Forms](create-a-headless-adaptive-form.md).
 
 ## Vanliga frågor
 
-### Vad är kärnkomponenter?
+### Vilka är kärnkomponenterna?
 
-[Kärnkomponenterna](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=sv-SE) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
+[Kärnkomponenterna](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) är en uppsättning standardiserade WCM-komponenter (Web Content Management) för AEM som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
 
 ### Vad finns det för funktioner för att aktivera kärnkomponenter?
 
