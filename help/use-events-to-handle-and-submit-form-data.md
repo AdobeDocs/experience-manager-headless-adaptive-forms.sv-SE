@@ -1,8 +1,9 @@
 ---
 title: Använd händelser för att hantera och skicka blankettdata utan behov av specialfunktioner
 description: Använd händelser för att hantera och skicka formulär med headless adaptive forms data.
-hide: false
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+hide: true
+hidefromtoc: true
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 0%

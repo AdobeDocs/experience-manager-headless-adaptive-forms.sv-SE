@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, adaptive form, architecture
 hide: false
 exl-id: ee7096d8-89e2-41e0-85e7-b26457df96fb
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '994'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ A typical Headless adaptive forms architecture constitutes an Adobe Experience M
 
 **Headless adaptive forms**: En Headless adaptive-form representeras som en .json-fil. JSON-strukturen definierar komponenter, begränsningar och struktur i ett formulär.
 
-**Front-end-appar**: Front-end-appar som SPA (Single Page Applications), Mobile Apps, JavaScript Apps, använder Headless-anpassade formulär (JSON Form Representation) och återger formuläret på en klient. Du kan använda React Renderer-komponenten som levereras med Headless adaptive-formulär för att återge ett adaptivt formulär eller skapa en egen anpassad komponent för att återge Headless adaptive-formulär internt.
+**Front-end-appar**: Front-end-appar som SPA (Single Page Applications), Mobile Apps, JavaScript Apps, använder Headless-anpassade formulär (JSON Form Representation) och återger formuläret på en klient. Du kan använda React Renderer-komponenten som levereras med Headless adaptive-formulär för att återge ett adaptivt formulär eller skapa en egen anpassad komponent för att återge Headless-adaptiva formulär. För användning av mobilformulär och offlineformulär rekommenderar vi att du bygger din egen app och hämtar formulärdefinitioner via API:t. Mer information finns i [Bästa praxis för mobilformulär](mobile-forms-best-practices.md).
 
 <!-- ### Understanding Headless adaptive forms definition -->
 
@@ -76,7 +76,7 @@ Förutom att tillhandahålla API:er för att validera begränsningar som tilläm
 
 Alla dessa komponenter ingår i AEM Archetype. När du skapar ett AEM Archetype 37- eller senare-projekt för Headless-formulär ingår den senaste versionen av ovanstående bibliotek i projektet.
 
-* **Kodspelaren**: [Kodspelarmiljön](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=sv-SE) är en interaktiv miljö som är utformad för utvecklare att experimentera med, lära sig om och testa funktionerna i Headless adaptive Forms.
+* **Kodspelaren**: [Kodspelarmiljön](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en) är en interaktiv miljö som är utformad för utvecklare att experimentera med, lära sig om och testa funktionerna i Headless adaptive Forms.
 
 **Startat program**: Adobe har också släppt ett startprogram som hjälper dig att snabbt komma igång med Headless-anpassade formulär.
 

@@ -5,9 +5,9 @@ user-guide-description: Dokumentation för Adobe Experience Manager Headless ada
 feature: Adaptive Forms
 role: Developer
 hide: false
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
 + [Ökning](overview.md)
 + [Översikt Testning](overview-testing.md)
 + [Arkitektur](architecture.md)
++ [Förstå headless-formulär - koncept och frågor och svar](understanding-headless-forms.md)
 + Snabbinställningar {#quick-setup}
    + [Aktivera Headless Adaptive Forms i AEM 6.5 Forms](enable-headless-adaptive-forms-and-core-components.md)
    + [Aktivera Headless Adaptive Forms i AEM Forms as a Cloud Service](enable-headless-adaptive-forms-and-core-components-on-forms-cloud-service.md)
@@ -27,12 +28,15 @@ ht-degree: 0%
 + Kom igång med hjälp av startpaket{#get-started}
    + [Skapa och publicera ett headless-formulär med en startsats](create-and-publish-a-headless-form.md)
    + [Använd ett anpassat reaktionsbibliotek för att återge ett headless-formulär](use-google-material-ui-react-components-to-render-a-headless-form.md)
+   + [Använd anpassade komponenter för att återge ett headless-formulär](developing-for-headless-forms-using-your-own-components.md)
+   + [Använd händelser för att hantera och skicka formulärdata](use-events-to-handle-and-submit-form-data.md)
+   + [Bästa praxis för mobilformulär](mobile-forms-best-practices.md)
 + Skapa Headless adaptive forms {#authoring-headless-adaptive-forms}
    + [Skapa ett Headless-formulär med adaptiv Forms-redigerare](create-a-headless-adaptive-form.md)
 + Referens för utvecklare {#developer-reference}
-   + [Utvecklarportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=sv-SE)
-   + [Kodspelargrund](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=sv-SE)
-   + [Huvudlösa API:er för anpassade formulär](https://opensource.adobe.com/aem-forms-af-runtime/api/)
+   + [Utvecklarportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
+   + [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [Headless adaptive forms APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Frågor och svar](faq.md)
 + [Felsökning](troubleshooting.md)
 + [Microsoft Visual Studio Code-tillägg för Headless adaptive forms](visual-studio-code-extension-for-headless-adaptive-forms.md)

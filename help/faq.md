@@ -9,9 +9,9 @@ level: Beginner, Intermediate
 keywords: headless, adaptive form, FAQ
 hide: false
 exl-id: 5bfc307d-96a3-4007-b65f-32176ecdb710
-source-git-commit: 28792fe1690e68cd301a0de2ce8bff53fae1605f
+source-git-commit: 780f06a39c75dbf8795ac7a971150410ed7981e9
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ archetype project to deploy the finished Headless adaptive forms and correspondi
 
 ## Var kan jag få en förhandsvisning av en Headless-blankett? {#storybook-example}
 
-Du kan använda startappen för att återge och förhandsgranska ett anpassat Headless-formulär. Du kan också ändra ett [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--introduction)-exempel om du vill förhandsgranska ett Headless-anpassat formulär.
+Du kan använda startappen för att återge och förhandsgranska ett anpassat Headless-formulär. Du kan också ändra ett [storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples—introduction)-exempel om du vill förhandsgranska ett Headless-anpassat formulär.
 
 ![](/help/assets/storybook-example.png)
 
@@ -55,7 +55,7 @@ För överlappande fält beror innehållet i det andra fältet på det innehåll
 
 ## Kan man med Headless-anpassade blanketter förifylla blanketter med skräddarsydda data?
 
-Headless adaptive forms allow prefill forms with personalized data. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples--prefill-form-with-personalised-data) innehåller ett exempel på hur du fyller i ett Headless-formulär i förväg.
+Headless adaptive forms allow prefill forms with personalized data. [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/?path=/story/reference-examples—prefill-form-with-personalized-data) innehåller ett exempel på hur du fyller i ett Headless-formulär i förväg.
 
 <!-- >
 ## Can I use existing Adaptive Forms editor to create a Headless adaptive form?
@@ -84,6 +84,29 @@ You do not require a license.properties file to run AEM Cloud Service SDK.
 ## Finns det någon plugin som underlättar utvecklingen för Headless AF?
 
 Ja - med Visual Studio Code-tillägget kan du manuellt skapa headless adaptive-formulär i JSON.
+
+## Vad rekommenderas för mobilformulär och offlineformulär? {#mobile-offline-forms}
+
+Bygg en egen app och hämta formulärdefinitioner via det Headless Adaptive Forms API. Du kan också implementera offlinesupport (till exempel lokal lagring och synkronisering). Mer information om rekommenderad metod och länkar till API:er finns i [Bästa praxis för mobilformulär](mobile-forms-best-practices.md).
+
+## Hur använder man GraphQL eller headless API:er med AEM Forms?
+
+AEM Headless Adaptive Forms använder **HTTP/REST API:er**, inte GraphQL. Appen anropar dessa API:er för att lista formulär, hämta en formulärdefinition (JSON), validera, skicka och spåra överföringsstatus. Använd [Headless adaptive forms HTTP API:er](https://opensource.adobe.com/aem-forms-af-runtime/api/) som fullständig referens. Information om hur formulär hämtas och återges finns i [Arkitektur](architecture.md) och [Förstå formulär utan rubriker](understanding-headless-forms.md).
+
+## Hur kan jag implementera och formatera headless-formulär med React-komponenter i Adobe AEM Forms?
+
+Du implementerar och formaterar headless-formulär med dina egna React-komponenter och CSS (eller ett UI-bibliotek som materialgränssnitt). Formulärlogiken - stat, validering och regler - kommer från Forms Web SDK och formuläret JSON; appen har det användargränssnitt som återger den.
+
+* Mer information om hur du formaterar ett headless-formulär med ett React UI-bibliotek finns i [Använda ett anpassat responsbibliotek för att återge ett headless-formulär](use-google-material-ui-react-components-to-render-a-headless-form.md).
+* Mer information om hur du skapar och mappar anpassade React-komponenter till formulärfält finns i [Använda anpassade komponenter för att återge ett headless-formulär](developing-for-headless-forms-using-your-own-components.md).
+
+Mer information om begrepp som när du ska använda headless-formulär, statushantering och validering finns i [Om rubrikfria formulär](understanding-headless-forms.md).
+
+## Hur kan jag implementera och anpassa AEM Forms med anpassade CSS-format, teman, regelredigerare och rubrikfria formulär?
+
+**Headless-former:** Du kan styra formatering och utseende. Du använder dina egna React-komponenter (eller andra) och din egen CSS. Det finns inga inbyggda teman. Se [Använd ett anpassat svarsbibliotek för att återge ett headless-formulär](use-google-material-ui-react-components-to-render-a-headless-form.md) och [Använd anpassade komponenter för att återge ett headless-formulär](developing-for-headless-forms-using-your-own-components.md) för att implementera och formatera headless-formulär.
+
+**Klassisk AEM Forms (teman, regelredigerare, visuell redigerare):** Anpassad CSS, temaredigeraren och regelredigeraren används för den klassiska (ej headless) redigeringsfunktionen i Forms. Information om detta finns i [AEM Forms-dokumentationen](https://experienceleague.adobe.com/docs/experience-manager-forms.html) för Experience League.
 
 ## Kan ett Headless-anpassat formulär ansluta till någon CRM för att läsa eller skriva data?
 
