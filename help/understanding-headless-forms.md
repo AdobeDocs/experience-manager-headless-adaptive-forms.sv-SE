@@ -222,5 +222,5 @@ För mobil- och offlinescenarier rekommenderar vi att du [bygger din egen app oc
 * [Frågor och svar](faq.md)
 * [Skapa och publicera ett headless-formulär](create-and-publish-a-headless-form.md)
 * [Headless adaptive forms APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/)
-* [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+* [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=sv-SE)
 * [Storybook](https://opensource.adobe.com/aem-forms-af-runtime/storybook/)

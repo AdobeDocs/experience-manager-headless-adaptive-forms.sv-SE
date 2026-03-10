@@ -38,4 +38,4 @@ På så sätt kan du behålla appen när Android och iOS förändras och använd
 * [Headless adaptive forms APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/) - Visa, hämta, validera och skicka formulär programmatiskt.
 * [Arkitektur](architecture.md) - Hur Headless adaptive forms fungerar och hur front-end-appar använder dem.
 
-Stegvis integrering finns i [Skapa och publicera ett headless-formulär](create-and-publish-a-headless-form.md) och [Developer Portal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en).
+Stegvis integrering finns i [Skapa och publicera ett headless-formulär](create-and-publish-a-headless-form.md) och [Developer Portal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=sv-SE).

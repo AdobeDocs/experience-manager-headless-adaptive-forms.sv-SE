@@ -27,7 +27,7 @@ Headless adaptive forms help you do the following:
 * Bygg högklassiga flerkanalsblanketter i valfritt programmeringsspråk.
 * Integrera blanketter i dator och mobilappar, webbplatser och chattapplikationer.
 * Återanvänd era egna gränssnittskomponenter med blankettapplikationer.
-* Utnyttja kraften i [Adobe Experience Manager Forms](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
+* Utnyttja kraften i [Adobe Experience Manager Forms](https://experienceleague.adobe.com/sv/docs/experience-manager-65/content/forms/getting-started/introduction-aem-forms).
 
 För användning av mobilformulär och offlineformulär rekommenderar vi att du bygger en egen app och hämtar formulärdefinitioner via det Headless Adaptive Forms API. Mer information finns i [Bästa praxis för mobilformulär](mobile-forms-best-practices.md).
 

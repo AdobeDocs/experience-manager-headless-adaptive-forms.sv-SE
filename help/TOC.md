@@ -34,8 +34,8 @@ ht-degree: 0%
 + Skapa Headless adaptive forms {#authoring-headless-adaptive-forms}
    + [Skapa ett Headless-formulär med adaptiv Forms-redigerare](create-a-headless-adaptive-form.md)
 + Referens för utvecklare {#developer-reference}
-   + [Utvecklarportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=en)
-   + [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=en)
+   + [Utvecklarportal](https://experienceleague.adobe.com/landing/aem-headless-forms/developer.html?lang=sv-SE)
+   + [Kodspelaren](https://experienceleague.adobe.com/landing/aem-headless-forms/developer/code.html?lang=sv-SE)
    + [Headless adaptive forms APIs](https://opensource.adobe.com/aem-forms-af-runtime/api/)
 + [Frågor och svar](faq.md)
 + [Felsökning](troubleshooting.md)
